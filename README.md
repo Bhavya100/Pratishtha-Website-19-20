@@ -1,2 +1,2 @@
 # Pratishtha-Website-19-20
-The official website of the fest named Prathishtha of Shah and Anchor Kutchhi Engineering College
+The official website of Pratishtha, the annual fest of Shah and Anchor Kutchhi Engineering College
