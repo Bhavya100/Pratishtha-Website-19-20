@@ -66,9 +66,9 @@
 
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a class="nav-link magic-nav" data-target=".easterModal" data-toggle="modal" href="#">Magic!</a>
-              </li>
+              </li>-->
               <li class="nav-item">
                 <a class="nav-link" href="#firstPage">Home</a>
               </li>
@@ -80,6 +80,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">Trust Board</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calendar.html">Events Calendar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact Us</a>
@@ -493,7 +496,15 @@
           </div>
           <div class="modal-body">
             <table class="col-md-6 span12 dates-table">
-							<tr>
+                <tr>
+                    <td class="table-cal">
+                      <div class="table-cal-dates">Coming Soon</div>
+                      <!--<div class="table-cal-month">FEB</div>
+                      <div class="table-cal-month">2018</div>
+                    </td>
+                    <td class="table-cal-event">Glares Day</td>
+                  </tr>-->
+							<!--<tr>
 								<td class="table-cal">
 									<div class="table-cal-dates">27</div>
 									<div class="table-cal-month">FEB</div>
@@ -566,7 +577,7 @@
 								<td class="table-cal-event">Western Formals/Saree & Rose Day</td>
 							</tr>
 						</table>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -604,6 +615,10 @@
 
         $("#events-container").click(function(){
           $('.daysModal').modal('toggle');
+        });
+
+        $("#gallery-container").click(function(){
+          $(location).attr('href', "gallery.html");
         });
       });
     </script>
