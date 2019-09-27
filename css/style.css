@@ -347,6 +347,7 @@ div.p_footer{
   }
 
   .flap-top {
+    size: 10%;
     position: absolute;
     left: -25%;
     top: 0;
