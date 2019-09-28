@@ -102,8 +102,6 @@
         <!-- <img src="img/tent.png" class="tent-img" /> -->
         <img style="margin-top:-15%; height: 100%; width: auto;" src="images/moon/phase_third_quarter.jpg" class="carnival-banner" />
         <h1 class="title-banner">Pratishtha '19-20<br>Contact Us</h1>
-        
-        <h2 class="title-banner"></h2>
 
         <div id="scroll-down" class="scroll-downs">
           <!-- <span class="scroll-indicator">Scroll Down</span> -->
@@ -113,14 +111,64 @@
         </div>
       </div>
 
-    <div class="section container-fluid about-container">
+      <div class="section container-fluid about-container">
         <!--<img src="img/1.png" class="flap-top-right" />-->
         <!--<img src="img/2.png" class="flap-bottom-left" />-->
-    </div>
+        <div class="space stars1"></div>
+        <div class="space stars2"></div>
+        <div class="space stars3"></div>
+        <div class="row">
+            <h1 style="margin-top:-5%; margin-left: 5%; color: white;">Contact Information</h1>
+            <p class="text-justify text-desc" style="margin-left: -25%; color: white;">
+                Email :<br>student.council@sakec.ac.in<br><br>Website:<br>www.shahandanchor.com  
+            </p>
+            
+            <h1 style="margin-top:-5%; margin-left: 25%; color: white;">Message Us</h1>
+            <!--<p class="text-justify text-desc" style="color: white;">
+                First Name &nbsp;&nbsp;&nbsp;&nbsp;Last Name<br>Email Address&nbsp;&nbsp;&nbsp;&nbsp; Phone<br>Message&nbsp;&nbsp;&nbsp;&nbsp; Send Button
+            </p>-->
+            <div>
+                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" style="margin-left: -75%;" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" style="margin-left: -75%;" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" style="margin-left: -75%;" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" style="margin-left: -75%;" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
           
-
-      <div class="section container-fluid" style="text-align: center; position: relative; padding: 0px;">
- 
+        </div>
+      </div>
+      
+        <div class="container-fluid p_footer" style="background-color: #000; padding-left: 0px; padding-right: 0px;">
+          <div class="row" style="padding-top: 20px;">
+            <div class="col-md-4" style="text-align: right;">
+              <!-- <img src="img/sakec_logo.png" style="width: 20%;"/> -->
+            </div>
+            <div class="col-md-4" style="color: white;">
+              <p style="text-align: center;">
+                <!-- <img src="img/sakec_logo.png" style="width: 20%;"/><br  /><br /> -->
+                &copy; Copyright 2018 - All Rights Reserved <br />Shah & Anchor Kutchhi Engineering College
+              </p>
+            </div>
+            <div class="col-md-4" style="color: white;">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -141,7 +189,45 @@
       </div>
     </div>
 
+    <!-- Easter modal -->
+    <div class="modal fade easterModal" role="dialog" aria-labelledby="easterModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" style="display: inline-block; font-size: 22px;">Congratulations!</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              You’ve found the <b>EASTER EGG</b> and made yourself proud. Boast about it among your friends and when you are finally done with it come collect your prize.<br /><br />
 
+              <b>Contact:</b><br />
+              Salil Deshpande(Webmaster): 9930926266<br /><br />
+
+              P.S. take a screenshot of this as a proof of finding the easter egg. There are 2 more Easter eggs for you to find!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Days modal -->
+    <div class="modal fade daysModal" role="dialog" aria-labelledby="daysModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: rgba(59, 59, 59, 1.0);">
+          <div class="modal-header" style="text-align: center;">
+            <div class="modal-title" style="display: inline-block; font-size: 26px;">Fun Fiesta Dates</div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size: 30px; color: white; font-family: 'Raleway';">x</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="col-md-6 span12 dates-table">
+                <tr>
+                    <td class="table-cal">
+                      <div class="table-cal-dates">Coming Soon</div>
         </div>
       </div>
     </div>
