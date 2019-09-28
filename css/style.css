@@ -89,18 +89,6 @@ a {
   position: relative;
   text-align: center;
 }
-.flap-top-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 30%;
-}
-.flap-bottom-left {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 30%;
-}
 .welcome-header {
   padding-bottom: 20px;
 }
