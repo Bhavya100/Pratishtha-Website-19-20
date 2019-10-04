@@ -16,10 +16,10 @@ body {
 
 .aos-item {
   display: inline-block;
-
+  float: left;
   width: 33.3333%;
-  height: 325px;
-  padding: 50px;
+  height: 300px;
+  padding: 20px;
 }
 
 .aos-item__inner {
