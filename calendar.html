@@ -33,11 +33,83 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
-    
-          <link rel="stylesheet" href="C:\Users\HP\Downloads\abcd\css\style.css">
-
 <style>
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+body {
+  background-color:#282423;
+}
+
+.jzdbox1 {
+  width:25%; 
+  background:#332f2e; 
+  border-radius:5px; 
+  overflow:hidden; 
+  display:block; 
+  margin-bottom:10px; 
+  box-shadow:0 0 10px #201d1c; 
+  margin:0 auto; 
+  margin-top:100px;
+}
+
+.jzdcal {
+  padding:0 10px 10px 10px; 
+  box-sizing:border-box!important; 
+  background:#749d9e; 
+  background-image: linear-gradient( 90.4deg,  rgba(248,52,246,1) 0.6%, rgba(152,38,252,1) 90% );
+}
+
+.jzdcalt {
+  font:18px 'Roboto'; 
+  font-weight:700; 
+  color:#f7f3eb; 
+  display:block; 
+  margin:18px 0 0 0; 
+  text-transform:uppercase; 
+  text-align:center; 
+  letter-spacing:1px;
+}
+
+.jzdcal span {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  color:#f7f3eb; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle {
+  border:1px solid #f7f3eb; 
+  box-sizing:border-box!important; 
+  border-radius:200px!important;
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:#282423; 
+  border:1px solid #f7f3eb; 
+  color:#f7f3eb; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}
 
 </style>
 </head>
@@ -65,84 +137,667 @@
 <!-- Floating Social Media bar Ends -->
 
 <div id="fullpage">
-    <div class="section container-fluid welcome-container">
-      <nav class="navbar navbar-expand-md navbar-style">
-        <a class="navbar-brand" href="index.html"><img src="img/sakec_logo.png" style="width: 50%;"/></a>
+  <div class="section container-fluid welcome-container">
+    <nav class="navbar navbar-expand-md navbar-style">
+      <a class="navbar-brand" href="index.html"><img src="img/sakec_logo.png" style="width: 50%;"/></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <!-- <span class="navbar-toggler-icon" style="color: red;"></span> -->
-          <i class="fa fa-bars" style="color: white;"></i>
-        </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <!-- <span class="navbar-toggler-icon" style="color: red;"></span> -->
+        <i class="fa fa-bars" style="color: white;"></i>
+      </button>
 
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <!--<li class="nav-item">
-              <a class="nav-link magic-nav" data-target=".easterModal" data-toggle="modal" href="#">Magic!</a>
-            </li>-->
-            <li class="nav-item">
-              <a class="nav-link" href="#firstPage">BackButton</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="council.html">Council</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">TrustBoard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calendar.html">EventsCalendar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Game</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <!--<li class="nav-item">
+            <a class="nav-link magic-nav" data-target=".easterModal" data-toggle="modal" href="#">Magic!</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link" href="#firstPage">BackButton</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="council.html">Council</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">TrustBoard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calendar.html">EventsCalendar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <!--<img style="margin-top:-30%; margin-left:20%;" src="images/images.jpg" class=""/>-->
-      <!-- <img src="img/tent.png" class="tent-img" /> -->
-      <img style="margin-top:-15%; height: 100%; width: auto;" src="images/moon/phase_third_quarter.jpg" class="carnival-banner" />
-      <h1 class="title-banner">Pratishtha '19-20<br>Events Calendar</h1>
+    <!--<img style="margin-top:-30%; margin-left:20%;" src="images/images.jpg" class=""/>-->
+    <!-- <img src="img/tent.png" class="tent-img" /> -->
+    <img style="margin-top:-15%; height: 100%; width: auto;" src="images/moon/phase_third_quarter.jpg" class="carnival-banner" />
+    <h1 class="title-banner">Pratishtha '19-20<br>About Us</h1>
 
-      <div id="scroll-down" class="scroll-downs">
-        <!-- <span class="scroll-indicator">Scroll Down</span> -->
-        <div class="mousey">
-          <div class="scroller"></div>
-        </div>
+    <div id="scroll-down" class="scroll-downs">
+      <!-- <span class="scroll-indicator">Scroll Down</span> -->
+      <div class="mousey">
+        <div class="scroller"></div>
       </div>
     </div>
-</div>
+  </div>
 
-<div class="section container-fluid about-container" style="padding: 0px;">
+  
+
+  <div class="section container-fluid about-container" style="padding: 0px;">
     <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
     <div class="space stars1"></div>
     <div class="space stars2"></div>
     <div class="space stars3"></div>
-
-    <head>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        
-            <script src="C:\Users\HP\Downloads\abcd\js\index.js"></script>
-    </head>
-
-    <div id="calendar">
-        <div id="calendar_header"><i class="icon-chevron-left"></i>          <h1></h1><i class="icon-chevron-right"></i>         </div>
-        <div id="calendar_weekdays"></div>
-        <div id="calendar_content"></div>
-    </div>
-
+    <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
     
+    <div class="jzdbox1 jzdbasf jzdcal">
+        
+        <div class="jzdcalt">August 2019</div>
+        
+        <span>Su</span>
+        <span>Mo</span>
+        <span>Tu</span>
+        <span>We</span>
+        <span>Th</span>
+        <span>Fr</span>
+        <span>Sa</span>
+        
+        
+        <span class="jzdb"><!--BLANK--></span>
+        <span class="jzdb"><!--BLANK--></span>
+        <span class="jzdb"><!--BLANK--></span>
+        <span class="jzdb"><!--BLANK--></span>
+        <span>1</span>
+        <span class="circle" data-title="My 25th birthday!">2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>10</span>
+        <span>11</span>
+        <span class="circle" data-title="2 month anniversary!">12</span>
+        <span>13</span>
+        <span>14</span>
+        <span>15</span>
+        <span>16</span>
+        <span>17</span>
+        <span>18</span>
+        <span>19</span>
+        <span>20</span>
+        <span>21</span>
+        <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+        <span>23</span>
+        <span>24</span>
+        <span>25</span>
+        <span>26</span>
+        <span>27</span>
+        <span>28</span>
+        <span>29</span>
+        <span>30</span>
+        <span>31</span>
+        </div>
 
+        <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+        <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+        <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+    
+  </div>
+  
+  <div class="section container-fluid about-container" style="padding: 0px;">
+      <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+      <div class="space stars1"></div>
+      <div class="space stars2"></div>
+      <div class="space stars3"></div>
+      <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+      
+      <div class="jzdbox1 jzdbasf jzdcal">
+          
+          <div class="jzdcalt">September 2019</div>
+          
+          <span>Su</span>
+          <span>Mo</span>
+          <span>Tu</span>
+          <span>We</span>
+          <span>Th</span>
+          <span>Fr</span>
+          <span>Sa</span>
+          
+          
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span>1</span>
+          <span class="circle" data-title="My 25th birthday!">2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span class="circle" data-title="2 month anniversary!">12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+          <span>30</span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          <span class="jzdb"><!--BLANK--></span>
+          </div>
+  
+          <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+          <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+          <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+      
+    </div>
+  
+
+    <div class="section container-fluid about-container" style="padding: 0px;">
+        <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+        <div class="space stars1"></div>
+        <div class="space stars2"></div>
+        <div class="space stars3"></div>
+        <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+        
+        <div class="jzdbox1 jzdbasf jzdcal">
+            
+            <div class="jzdcalt">October 2019</div>
+            
+            <span>Su</span>
+            <span>Mo</span>
+            <span>Tu</span>
+            <span>We</span>
+            <span>Th</span>
+            <span>Fr</span>
+            <span>Sa</span>
+            
+            
+            <span class="jzdb"><!--BLANK--></span>
+            <span>1</span>
+            <span class="circle" data-title="My 25th birthday!">2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span class="circle" data-title="2 month anniversary!">12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span>20</span>
+            <span>21</span>
+            <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span>31</span>
+            <span class="jzdb"><!--BLANK--></span>
+            <span class="jzdb"><!--BLANK--></span>
+            <span class="jzdb"><!--BLANK--></span>
+            </div>
+    
+            <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+            <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+            <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+        
+      </div>
+
+      <div class="section container-fluid about-container" style="padding: 0px;">
+          <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+          <div class="space stars1"></div>
+          <div class="space stars2"></div>
+          <div class="space stars3"></div>
+          <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+          
+          <div class="jzdbox1 jzdbasf jzdcal">
+              
+              <div class="jzdcalt">November 2019</div>
+              
+              <span>Su</span>
+              <span>Mo</span>
+              <span>Tu</span>
+              <span>We</span>
+              <span>Th</span>
+              <span>Fr</span>
+              <span>Sa</span>
+              
+              
+              <span class="jzdb"><!--BLANK--></span>
+              <span class="jzdb"><!--BLANK--></span>
+              <span class="jzdb"><!--BLANK--></span>
+              <span class="jzdb"><!--BLANK--></span>
+              <span>1</span>
+              <span class="circle" data-title="My 25th birthday!">2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span class="circle" data-title="2 month anniversary!">12</span>
+              <span>13</span>
+              <span>14</span>
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+              <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+              <span>23</span>
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+              <span class="jzdb"><!--BLANK--></span>
+              </div>
+      
+              <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+              <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+              <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+          
+        </div>
+
+
+        <div class="section container-fluid about-container" style="padding: 0px;">
+            <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+            <div class="space stars1"></div>
+            <div class="space stars2"></div>
+            <div class="space stars3"></div>
+            <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+            
+            <div class="jzdbox1 jzdbasf jzdcal">
+                
+                <div class="jzdcalt">December 2019</div>
+                
+                <span>Su</span>
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+                
+                
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span>1</span>
+                <span class="circle" data-title="My 25th birthday!">2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span class="circle" data-title="2 month anniversary!">12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+                <span>21</span>
+                <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>31</span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                <span class="jzdb"><!--BLANK--></span>
+                </div>
+        
+                <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+                <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+                <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+            
+          </div>
+
+          <div class="section container-fluid about-container" style="padding: 0px;">
+              <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+              <div class="space stars1"></div>
+              <div class="space stars2"></div>
+              <div class="space stars3"></div>
+              <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+              
+              <div class="jzdbox1 jzdbasf jzdcal">
+                  
+                  <div class="jzdcalt">January 2020</div>
+                  
+                  <span>Su</span>
+                  <span>Mo</span>
+                  <span>Tu</span>
+                  <span>We</span>
+                  <span>Th</span>
+                  <span>Fr</span>
+                  <span>Sa</span>
+                  
+                  
+                  <span class="jzdb"><!--BLANK--></span>
+                  <span class="jzdb"><!--BLANK--></span>
+                  <span>1</span>
+                  <span class="circle" data-title="My 25th birthday!">2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                  <span>11</span>
+                  <span class="circle" data-title="2 month anniversary!">12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                  <span>16</span>
+                  <span>17</span>
+                  <span>18</span>
+                  <span>19</span>
+                  <span>20</span>
+                  <span>21</span>
+                  <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+                  <span>23</span>
+                  <span>24</span>
+                  <span>25</span>
+                  <span>26</span>
+                  <span>27</span>
+                  <span>28</span>
+                  <span>29</span>
+                  <span>30</span>
+                  <span>31</span>
+                  <span class="jzdb"><!--BLANK--></span>
+                  <span class="jzdb"><!--BLANK--></span>
+                  </div>
+          
+                  <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+                  <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+                  <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+              
+            </div>
+
+            <div class="section container-fluid about-container" style="padding: 0px;">
+                <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+                <div class="space stars1"></div>
+                <div class="space stars2"></div>
+                <div class="space stars3"></div>
+                <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+                
+                <div class="jzdbox1 jzdbasf jzdcal">
+                    
+                    <div class="jzdcalt">February 2020</div>
+                    
+                    <span>Su</span>
+                    <span>Mo</span>
+                    <span>Tu</span>
+                    <span>We</span>
+                    <span>Th</span>
+                    <span>Fr</span>
+                    <span>Sa</span>
+                    
+                    
+                    <span class="jzdb"><!--BLANK--></span>
+                    <span class="jzdb"><!--BLANK--></span>
+                    <span class="jzdb"><!--BLANK--></span>
+                    <span class="jzdb"><!--BLANK--></span>
+                    <span class="jzdb"><!--BLANK--></span>
+                    <span>1</span>
+                    <span class="circle" data-title="My 25th birthday!">2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span class="circle" data-title="2 month anniversary!">12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span class="jzdb"><!--BLANK--></span>
+                    </div>
+            
+                    <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+                    <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+                    <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+                
+              </div>
+
+              <div class="section container-fluid about-container" style="padding: 0px;">
+                  <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
+                  <div class="space stars1"></div>
+                  <div class="space stars2"></div>
+                  <div class="space stars3"></div>
+                  <!--<p style="color:white;">Embed the after movie here and some lines about pratishtha 2019 here</p>-->
+                  
+                  <div class="jzdbox1 jzdbasf jzdcal">
+                      
+                      <div class="jzdcalt">March 2020</div>
+                      
+                      <span>Su</span>
+                      <span>Mo</span>
+                      <span>Tu</span>
+                      <span>We</span>
+                      <span>Th</span>
+                      <span>Fr</span>
+                      <span>Sa</span>
+                      
+                      
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span>1</span>
+                      <span class="circle" data-title="My 25th birthday!">2</span>
+                      <span>3</span>
+                      <span>4</span>
+                      <span>5</span>
+                      <span>6</span>
+                      <span>7</span>
+                      <span>8</span>
+                      <span>9</span>
+                      <span>10</span>
+                      <span>11</span>
+                      <span class="circle" data-title="2 month anniversary!">12</span>
+                      <span>13</span>
+                      <span>14</span>
+                      <span>15</span>
+                      <span>16</span>
+                      <span>17</span>
+                      <span>18</span>
+                      <span>19</span>
+                      <span>20</span>
+                      <span>21</span>
+                      <span class="circle" data-title="#MusicMonday - share your favorite song!">22</span>
+                      <span>23</span>
+                      <span>24</span>
+                      <span>25</span>
+                      <span>26</span>
+                      <span>27</span>
+                      <span>28</span>
+                      <span>29</span>
+                      <span>30</span>
+                      <span>31</span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      <span class="jzdb"><!--BLANK--></span>
+                      </div>
+              
+                      <div style="padding-top:50px"><p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 2: Demo Event 1</p>
+                      <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 12: Demo Event 2</p>
+                      <p style="font-size: 21px; color: white; text-align:center; padding-left: 5%; padding-right: 5%;">August 22: Demo Event 3</p></div>
+                  
+                </div>
+
+  
+    <div class="container-fluid p_footer" style="background-color: #000; padding-left: 0px; padding-right: 0px;">
+      <div class="row" style="padding-top: 20px;">
+        <div class="col-md-4" style="text-align: right;">
+          <!-- <img src="img/sakec_logo.png" style="width: 20%;"/> -->
+        </div>
+        <div class="col-md-4" style="color: white;">
+          <p style="text-align: center;">
+            <!-- <img src="img/sakec_logo.png" style="width: 20%;"/><br  /><br /> -->
+            &copy; Copyright 2018 - All Rights Reserved <br />Shah & Anchor Kutchhi Engineering College
+          </p>
+        </div>
+        <div class="col-md-4" style="color: white;"></div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Trustee modal -->
+<div class="modal fade trustModal" role="dialog" aria-labelledby="trustModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" style="display: inline-block; font-size: 22px;">Trust Board</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/trust-board.png" class="img-responsive"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.animate-colors-min.js"></script>
+<script src="js/scrolloverflow.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<!-- floating social -->
+<script>
+  var image = '<img src="http://hd.wallpaperswide.com/thumbs/balck_and_white-t2.jpg">';
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({placement: 'bottom', content: image, html: true});
+  });
+
+</script>
+<!-- fullpage scrolling -->
+<script>
+
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      scrollOverflow: true,
+      anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
+    });
+
+    $("#scroll-down").click(function() {
+      $(location).attr('href', "#secondPage");
+    });
+
+    $("#council-container").click(function(){
+      $(location).attr('href', "council.html");
+    });
+
+    $("#events-container").click(function(){
+      $('.daysModal').modal('toggle');
+    });
+
+    $("#gallery-container").click(function(){
+      $(location).attr('href', "gallery.html");
+    });
+  });
+</script>
 
 </body>
 </html>
