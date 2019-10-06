@@ -74,6 +74,19 @@ a {
   width: 18%;
   transform: translateX(-50%);
 }
+/* for mobile hide */
+@media only screen and (min-width: 320px) and (max-width: 480) {
+  .mobile-hide{
+    display: none;
+  }
+}
+/* for mobile show */
+@media only screen and (min-width: 320px) and (max-width: 480) {
+  .mobile-show{
+    display: none;
+  }
+}
+
 .title-banner {
   position: absolute;
   left: 50%;
