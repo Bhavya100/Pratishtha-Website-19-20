@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,7 @@
     <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,257 +20,1188 @@
     <link href="css/jquery.fullPage.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/soc.css">
-
-    <!-- HTML5 shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="css/event.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!-- Icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-
-  <body>
-    <!-- Floating Social Media bar Starts -->
-      <div class="float-sm">
-        <div class="fl-fl float-fb">
-          <i class="fa fa-facebook fa-1x"></i>
-          <a href="https://www.facebook.com/sakecfestpratishtha/" target="_blank"> Like</a>
-        </div>
-        <div class="fl-fl float-tw">
-          <i class="fa fa-twitter"></i>
-          <a href="https://twitter.com/Pratishtha_fest" target="_blank">Follow</a>
-        </div>
-        <div class="fl-fl float-yt">
-          <i class="fa fa-youtube"></i>
-          <a href="https://www.youtube.com/channel/UCixRPTGaimHGtjgfgM71j-w" target="_blank">Follow</a>
-        </div>
-        <div class="fl-fl float-ig">
-          <i class="fa fa-instagram"></i>
-          <a href="https://www.instagram.com/pratishtha_sakecfest/?hl=en" target="_blank">Follow</a>
-        </div>
-      </div>
-    <!-- Floating Social Media bar Ends -->
     
-    <div id="fullpage">
+</head>
+
+<body>
+  <!-- Floating Social Media bar Starts -->
+  <div class="float-sm">
+      <div class="fl-fl float-fb">
+        <i class="fa fa-facebook fa-1x"></i>
+        <a href="https://www.facebook.com/sakecfestpratishtha/" target="_blank"> Like</a>
+      </div>
+      <div class="fl-fl float-tw">
+        <i class="fa fa-twitter"></i>
+        <a href="https://twitter.com/Pratishtha_fest" target="_blank">Follow</a>
+      </div>
+      <div class="fl-fl float-yt">
+        <i class="fa fa-youtube"></i>
+        <a href="https://www.youtube.com/channel/UCixRPTGaimHGtjgfgM71j-w" target="_blank">Follow</a>
+      </div>
+      <div class="fl-fl float-ig">
+        <i class="fa fa-instagram"></i>
+        <a href="https://www.instagram.com/pratishtha_sakecfest/?hl=en" target="_blank">Follow</a>
+      </div>
+  </div>
+  <!-- Floating Social Media bar Ends -->
+  
+  <div id="fullpage">
       <div class="section container-fluid welcome-container">
-        <nav class="navbar navbar-expand-md navbar-style">
-          <a class="navbar-brand" href="index.html"><img src="img/sakec_logo.png" style="width: 50%;"/></a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <!-- <span class="navbar-toggler-icon" style="color: red;"></span> -->
-            <i class="fa fa-bars" style="color: white;"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-              <!--<li class="nav-item">
-                <a class="nav-link magic-nav" data-target=".easterModal" data-toggle="modal" href="#">Magic!</a>
-              </li>-->
-              <li class="nav-item">
-                <a class="nav-link" style="font-size: 250%; margin-top: -30%" href="javascript:history.go(-1)" title="Return to the previous page">&larr;</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="council.html">Council</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">TrustBoard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="calendar.html">EventsCalendar</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-        <!--<img style="margin-top:-30%; margin-left:20%;" src="images/images.jpg" class=""/>-->
-        <!-- <img src="img/tent.png" class="tent-img" /> -->
-        <img style="margin-top:-15%; height: 100%; width: auto;" src="images/moon/phase_third_quarter.jpg" class="carnival-banner" />
-        <h1 class="title-banner">Pratishtha '19-20<br>Nucleus</h1>
-
-        <div id="scroll-down" class="scroll-downs">
-          <!-- <span class="scroll-indicator">Scroll Down</span> -->
-          <div class="mousey">
-            <div class="scroller"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section container-fluid about-container">
-        <!--<img src="img/1.png" class="flap-top-right" />-->
-        <!--<img src="img/2.png" class="flap-bottom-left" />-->
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
-        <p style="color: white;">Gaming events</p>
-      </div>
-
-      <div class="section container-fluid about-container" style="padding: 0px;">
-        <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
-        <p style="color:white;">Software events</p>
-      </div>
-      <div class="section container-fluid about-container" style="padding: 0px;">
-        <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
-        <p style="color: white;">Robotic events</p>
-      </div>
-      <div class="section container-fluid about-container" style="padding: 0px;">
-        <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
-        <p style="color: white;">Technical events</p>
-      </div>
-      <div class="section container-fluid about-container" style="padding: 0px;">
-        <!--<img src="img/upper-flap.png" class="upper-flap-event"/>-->
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
-        <p style="color: white;">Fun events</p>
-      </div>
-      
-      
-
-
-
-      
-        <div class="container-fluid p_footer" style="background-color: #000; padding-left: 0px; padding-right: 0px;">
-          <div class="row" style="padding-top: 20px;">
-            <div class="col-md-4" style="text-align: right;">
-              <!-- <img src="img/sakec_logo.png" style="width: 20%;"/> -->
-            </div>
-            <div class="col-md-4" style="color: white;">
-              <p style="text-align: center;">
-                <!-- <img src="img/sakec_logo.png" style="width: 20%;"/><br  /><br /> -->
-                &copy; Copyright 2018 - All Rights Reserved <br />Shah & Anchor Kutchhi Engineering College
-              </p>
-            </div>
-            <div class="col-md-4" style="color: white;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Trustee modal -->
-    <div class="modal fade trustModal" role="dialog" aria-labelledby="trustModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" style="display: inline-block; font-size: 22px;">Trust Board</div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+          <nav class="navbar navbar-expand-md navbar-style">
+            <a class="navbar-brand" href="index.html"><img src="img/sakec_logo.png" style="width: 50%;"/></a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <!-- <span class="navbar-toggler-icon" style="color: red;"></span> -->
+              <i class="fa fa-bars" style="color: white;"></i>
             </button>
+  
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <!--<li class="nav-item">
+                  <a class="nav-link magic-nav" data-target=".easterModal" data-toggle="modal" href="#">Magic!</a>
+                </li>-->
+                <li class="nav-item">
+                  <a class="nav-link" style="font-size: 250%; margin-top: -30%" href="javascript:history.go(-1)" title="Return to the previous page">&larr;</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="council.html">Council</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">TrustBoard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="calendar.html">EventsCalendar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Game</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+  
+          <!--<img style="margin-top:-30%; margin-left:20%;" src="images/images.jpg" class=""/>-->
+          <!-- <img src="img/tent.png" class="tent-img" /> -->
+          <img style="margin-top:-15%; height: 100%; width: auto;" src="images/moon/phase_third_quarter.jpg" class="carnival-banner" />
+          <h1 class="title-banner">Pratishtha '19-20<br>Nucleus</h1>
+  
+          <div id="scroll-down" class="scroll-downs">
+            <!-- <span class="scroll-indicator">Scroll Down</span> -->
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
           </div>
-          <div class="modal-body">
-            <img src="img/trust-board.png" class="img-responsive"/>
+        </div>
+
+    <div class="section container-fluid about-container" style="text-align: center; position: relative; padding: 0px;">
+
+        <div class="space stars1"></div>
+        <div class="space stars2"></div>
+        <div class="space stars3"></div>
+
+      <div class="container-fluid olympus_events">
+        <div class="row">
+          <h2 class="o_event_grp_name" style="color: white;">Gaming</h2>
+          <hr />
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/lan_gaming.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Lan Gaming</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".lan_gaming">Register</a>
+            </div>
+            <div class="o_event_date red-accent-1"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="banners/pubg.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">PUBG Mobile</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".mob_gaming">Register</a>
+            </div>
+            <div class="o_event_date light-green-lighten-3"> 09/10/2019 - 11/10/2019</div>
+          </div>
+          <!--<div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/vr.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">VR Gaming</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".vr_gaming">Register</a>
+            </div>
+            <div class="o_event_date blue-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>-->
+        </div>
+        <div class="row">
+          <h2 class="o_event_grp_name" style="color: white;">Software</h2>
+          <hr />
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="banners/blind coding.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">BLIND CODING</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".codeathon">Register</a>
+            </div>
+            <div class="o_event_date purple-lighten-3"> 10/10/2019</div>
+          </div>
+
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="banners/ALGO CRACK.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Algorithm Crack</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".codeathon">Register</a>
+            </div>
+            <div class="o_event_date purple-lighten-3"> 10/10/2019</div>
+          </div>
+
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="banners/codeathon.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">CODE-A-THON</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".codeathon">Register</a>
+            </div>
+            <div class="o_event_date purple-lighten-3"> 11/10/2019</div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="o_event_grp_name" style="color: white;">Robotics</h2>
+          <hr />
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/robosoccer.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Robo Soccer</h4>
+              
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".robosoccer">Register</a>
+            </div>
+            <div class="o_event_date cyan-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/robosumo.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Robo Sumo</h4>
+              
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".robosumo">Register</a>
+            </div>
+            <div class="o_event_date amber-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/robowars.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Robo Wars</h4>
+              
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".robowars">Register</a>
+            </div>
+            <div class="o_event_date grey-lighten-3"> 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/l2grandprix.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">L2 Grand Prix</h4>
+              
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".l2grandprix">Register</a>
+            </div>
+            <div class="o_event_date pink-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+              <img class="card-img-top o_event_img" src="img/event_nucleus/cablecrane.jpg">
+              <div class="card-body">
+                <h4 class="card-title o_event_title">Cable Crane</h4>
+                
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".cablecrane">Register</a>
+              </div>
+            <div class="o_event_date indigo-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/camobot.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Cam-O-Bot</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".camobot">Register</a>
+            </div>
+            <div class="o_event_date red-accent-1"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/confusedbot.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Confused Bot</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".confusedbot">Register</a>
+            </div>
+            <div class="o_event_date light-green-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/aquabot.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Aqua Bot</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".aquabot">Register</a>
+            </div>
+            <div class="o_event_date blue-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/drone.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Drone</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".drone">Register</a>
+            </div>
+            <div class="o_event_date red-accent-1"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/linefollower.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Line Follower</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".linefollower">Register</a>
+            </div>
+            <div class="o_event_date purple-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="o_event_grp_name" style="color: white;">Technical</h2>
+          <hr />
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/technokagaz.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Technokagaz</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".technokagaz">Register</a>
+            </div>
+            <div class="o_event_date grey-lighten-3"> 07/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/techexpo.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Tech Expo</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".techexpo">Register</a>
+            </div>
+            <div class="o_event_date light-green-lighten-3"> 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/mrmsnucleus.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Mr. & Ms Nucleus</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".mrmsnucleus">Register</a>
+            </div>
+            <div class="o_event_date indigo-lighten-3"> 08/03/2018</div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="o_event_grp_name" style="color: white;">Fun</h2>
+          <hr />
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/lasertag.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">LASER tag</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".lasertag">Register</a>
+            </div>
+            <div class="o_event_date red-accent-1"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/minutetowinit.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Minute To Win It</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".minutetowinit">Register</a>
+            </div>
+            <div class="o_event_date blue-lighten-3"> 07/03/2018 - 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/artreasurehunt.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">AR Treasure Hunt</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".artreasurehunt">Register</a>
+            </div>
+            <div class="o_event_date purple-lighten-3"> 07/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/csi.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Crime Scene Investigation</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".csi">Register</a>
+            </div>
+            <div class="o_event_date amber-lighten-3"> 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/engmarathon.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Engineering Marathon</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".engmarathon">Register</a>
+            </div>
+            <div class="o_event_date cyan-lighten-3"> 08/03/2018</div>
+          </div>
+          <div class="col-lg-4 card z-depth-2 hoverable o_event">
+            <img class="card-img-top o_event_img" src="img/event_nucleus/blowthecomponent.jpg">
+            <div class="card-body">
+              <h4 class="card-title o_event_title">Blow the Component</h4>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target=".blowthecomponent">Register</a>
+            </div>
+            <div class="o_event_date indigo-lighten-3"> 07/03/2018 - 08/03/2018</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Easter modal -->
-    <div class="modal fade easterModal" role="dialog" aria-labelledby="easterModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title" style="display: inline-block; font-size: 22px;">Congratulations!</div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" style="font-size: 30px;">&times;</span>
-            </button>
+      <br /><br />
+      <div class="container-fluid p_footer" style="background-color: #000; padding-left: 0px; padding-right: 0px;">
+        <div class="row" style="padding-top: 20px;">
+          <div class="col-md-4" style="text-align: right;">
+            <!-- <img src="img/sakec_logo.png" style="width: 20%;"/> -->
           </div>
-          <div class="modal-body">
-            <p>
-              You’ve found the <b>EASTER EGG</b> and made yourself proud. Boast about it among your friends and when you are finally done with it come collect your prize.<br /><br />
-
-              <b>Contact:</b><br />
-              Salil Deshpande(Webmaster): 9930926266<br /><br />
-
-              P.S. take a screenshot of this as a proof of finding the easter egg. There are 2 more Easter eggs for you to find!
+          <div class="col-md-4" style="color: white;">
+            <p style="text-align: center;">
+              <!-- <img src="img/sakec_logo.png" style="width: 20%;"/><br  /><br /> -->
+              &copy; Copyright 2018 - All Rights Reserved <br />Shah & Anchor Kutchhi Engineering College
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Days modal -->
-    <div class="modal fade daysModal" role="dialog" aria-labelledby="daysModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content" style="background-color: rgba(59, 59, 59, 1.0);">
-          <div class="modal-header" style="text-align: center;">
-            <div class="modal-title" style="display: inline-block; font-size: 26px;">Fun Fiesta Dates</div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true" style="font-size: 30px; color: white; font-family: 'Raleway';">x</span>
-            </button>
+          <div class="col-md-4" style="color: white;">
           </div>
-          <div class="modal-body">
-            <table class="col-md-6 span12 dates-table">
-                <tr>
-                    <td class="table-cal">
-                      <div class="table-cal-dates">Coming Soon</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.animate-colors-min.js"></script>
-    <script src="js/scrolloverflow.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <!-- floating social -->
-    <script>
-      var image = '<img src="http://hd.wallpaperswide.com/thumbs/balck_and_white-t2.jpg">';
-      $(document).ready(function(){
-          $('[data-toggle="popover"]').popover({placement: 'bottom', content: image, html: true});
+
+  <!-- Trustee modal -->
+  <div class="modal fade trustModal" role="dialog" aria-labelledby="trustModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" style="display: inline-block; font-size: 22px;">Trust Board</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/trust-board.png" class="img-responsive"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- events modal -->
+
+
+
+  <div class="modal fade lan_gaming event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header red-accent-1" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            <span class="emc_event_name emc_bold_text">🎧👾 LAN GAMING 🖥🕹</span><br />
+
+            GAMES : <br />
+            ✨DOTA 2💥<br />
+            🔪COUNTER STRIKE 1.6🔫<br />
+            ⚽FIFA 18👟<br />
+            🏁NFS MW🏎<br />
+            <br />
+            Participants can bring their own gears but it should be plug and play.<br />
+            <br />
+            📆 DATE / DAY : <br />
+            7th March (Wednesday)<br />
+            8th March(Thursday)<br />
+            <br />
+            ⏰ TIME : 10:00 am to 5:00 pm<br />
+            <br />
+            📍 VENUE : Lab No. 703, 704<br />
+            SAKEC, Chembur, Mumbai<br />
+            https://g.co/kgs/kXHY3W<br />
+            <br />
+            Fill this form to get your game on :<br /> 
+            <a href="https://goo.gl/hmrWmj"><span class="emc_event_reg">https://goo.gl/hmrWmj</span></a> <br />
+            <br />
+            <span class="emc_event_code emc_bold_text">🔖 EVENT CODE : N101</span>
+            <br />
+            <span class="emc_bold_text">💵 REGISTRATION FEES :</span> <br />
+            Dota 2: ₹500 (Team of 5)<br />
+            Counter Strike 1.6: ₹250 (Team of 5)<br />
+            Fifa 18: ₹50 (Per Head)<br />
+            NFS MW: ₹50 (Per Head)<br />
+            <br />
+            <span class="emc_bold_text">🏆 PRIZE MONEY</span>  <br />
+            Dota 2 : ₹5000 worth <br />
+            Counter Strike 1.6 : ₹3000 worth <br />
+            Fifa 18 : ₹2000 worth<br />
+            NFS MW : ₹2000 worth<br />
+            <br />
+            <span class="emc_bold_text">📞 CONTACT :</span> <br />
+            Siddhesh Dhuri: 9869164832<br />
+            Preet Gada: 7208875855<br />
+            Purav Patel: 9702617001<br />
+            <br />
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer red-accent-1">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade blowthecomponent event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header indigo-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            🔥😛 BLOW THE COMPONENT 🔥😛<br />.<br />Learn and observer reaction of various components e.g. Resistor, capacitor, etc when exceeded their current limits will blow up! 🔥<br />.<br />RULES AND REGULATIONS<br />1. Do not exceed the voltage of the powersupply from the voltage given by the organisers ( may harm the powersupply).<br />2. The blowing should be done inside the polycarbonate box provided.<br />.<br />📌 CATEGORY : Fun<br />.<br />🔖 EVENT CODE : N506<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 9am to 5am<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES : ₹10<br />.<br />📞 CONTACT :<br />Unnit Dedhia (@unnit007) : 9833811977<br />Aditya Iyer (@aditiya.iyer.75) : 9699551903<br />.
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer indigo-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade engmarathon event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header cyan-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            💡 ENGINEERING MARATHON 🏃🏿‍♂️<br />(The Technical Treasure Hunt)<br />.<br />There is a treasure hidden and we have a map leading up to it!<br />But guess what, nothing comes that easy in life!<br />To get your hands on to the treasure you'll have to be the smartest among all.<br />Solve all the technical riddles correctly and it will lead you to the hidden treasure itself!<br />.<br />RULES AND REGULATIONS :<br />1. Each team should have 5 members.<br />2. Team members cannot use mobiles, internet unless instructed to do so.<br />3. The clue has to be found in a particular order. The team cannot skip a clue.<br />4. Do not tamper other team's clues.<br />5. Do not search for clues in off-limit areas.<br />6. Entire team must stay together during the course of the event.<br />7. The team which finds the treasure first will be declared as the winner<br />.<br />📌 CATEGORY : Fun<br />.<br />🔖 EVENT CODE : N505<br />.<br />📆 DATE / DAY :<br />8th March (Thursday)<br />.<br />⏰ TIME : 1pm to 5pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES<br />Per person<br />₹20 (IEEE Members)<br />₹30 (Non IEEE members)<br />For a team of 5<br />₹100 (IEEE Members)<br />₹120 (Non IEEE members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹1000 worth<br />.<br />📞 CONTACT :<br />Nemish Doshi : 9773355449<br />Advait Doshi : 9757015103
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer cyan-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade csi event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header amber-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            🔪🔬 CRIME SCENE INVESTIGATION ❓🏃🏿‍♂️<br />.<br />Attention please!<br />All you Sherlock fans!<br />We are giving you an opportunity to bring out the spy in you. 😎<br />A murder has been committed. 🔪<br />There is a criminal roaming out there free! 🤨<br />So, all the Sakecian Sherlocks 😎 come grab this opportunity to solve a thrilling mystery.<br />Decode the clues, follow the trail to get your hands on the criminal out there!<br />.<br />RULES AND REGULATIONS :<br />1. Every team should have 5 members each.<br />2. Participants should take proper care of the clues.<br />3. The clues has to be found in the given order. Teams cannot skip any clue.<br />4. Do not tamper other team's clue.<br />5. Do not search for clues in off-limit areas.<br />6. Participants should not use mobiles without volunteer's permission.<br />7. Entire team must stay together throughout the game.<br />.<br />📌 CATEGORY : Fun<br />.<br />🔖 EVENT CODE : N504<br />.<br />📆 DATE / DAY :<br />8th March (Thursday)<br />.<br />⏰ TIME : 10am - 1pm<br />.<br />📍 VENUE : FOYER, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES<br />Per person<br />₹20 (IEEE Members)<br />₹30 (Non IEEE members)<br />For a team of 5<br />₹100 (IEEE Members)<br />₹120 (Non IEEE members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹1000 worth<br />.<br />For any queries contact<br />Shamika Dumbre (@shamika18): 8976507132<br />Vinay Shingte (@vinayshingate) : 9821189776<br />
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer amber-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade artreasurehunt event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header purple-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           🗺 📱 AUGMENTED REALITY TREASURE HUNT 🏃🏿‍♂️🏢<br />.<br />Have you Played Pokemon Go and ever wondered when such thing will happen in our college?<br />Your very own friends have made this Augmented Reality Treasure Hunt game only for you.<br />Register yourself and enjoy the bitter sweet fun on the first day of Nucleus!<br />.<br />RULES AND REGULATIONS :<br />1. A team will consist of 4 members only.<br />2. Only 1 device can be used per team for scanning.<br />3. Do not damage the zapcodes.<br />4. If a team is found cheating then it is the sole discretion of the event Head and Co-Heads to allow or disqualify the team.<br />.<br />📌 CATEGORY : Fun<br />.<br />🔖 EVENT CODE : N503<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />.<br />⏰ TIME : 1 pm onwards<br />.<br />📍 VENUE : College Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES<br />Per person<br />₹20 (IEEE Members)<br />₹30 (Non IEEE members)<br />For a team of 4<br />₹100 (IEEE Members)<br />₹120 (Non IEEE members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹1000 worth<br />.<br />📞 CONTACT :<br />Bhavya Haria: 9619305482<br />Angad Gosain :9833745758<br />Dhaval Jariwala:7506456894<br />Akshay Sonawane:9167258216<br />.
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer purple-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade minutetowinit event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header blue-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           ⏳⏱ MINUTE TO WIN IT ⏰⌛️<br />Do you have the perfect balance between Speed and Accuracy?<br />Test your skills!<br />Compete with your friends in various entertaining and challenging 1-minute games.<br />And be the Minute King of SAKEC 🔥<br />All you need is a Minute To Win It!<br />.<br />RULES AND REGULATIONS :<br />1. For individual participant, the teams will be decided by us.<br />2. The participants completing the task in least time will be the winner of that round.<br />3. The decision made by the event heads will be final.<br />.<br />📌 CATEGORY : Fun<br />.<br />🔖 EVENT CODE : N502<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 1pm to 5pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES :<br />₹20 (IEEE members)<br />₹40 (Non IEEE Members)<br />.<br />📞 CONTACT :<br />Tejas Pawar (@that_pogonophile): 8108234004<br />Mayur Kanse: 9004766435<br />Harshada Debnath (@harshadadebnath) : 8425955584
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer blue-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade lasertag event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header red-accent-1" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            . 🤺⏳ LASER TAG 🔫⚔️<br />.<br />Experience the thrill of shooting your opponents with laser guns and feel the adrenaline of real life action as you shoot your way to victory.<br />Come with your team, strategize and defeat your opponents while you protect yourself from their lasers.<br />So get those gaming skills out in real life and be the laser commando.<br />MAY THE GLOW BE WITH YOU 🔥<br />.<br />RULES AND REGULATIONS :<br />1] 4 vs 4 team match.<br />2] Each team will be given 4 kits.<br />3] Death of all the members of the team will result in the opposite team winning.<br />4] No form of physical contact with the opponent team will be allowed.<br />5] Any damage to the equipment, the participant will be held responsible.<br />6] After death the participant will not be allowed to play any further.<br />7] Dark clothes preferred.<br />8] Payment to be done prior to the entry.<br />9] For single player entry, the player will be called on availability of remaining team members.<br />.<br />📌 CATEGORY: Fun<br />.<br />🔖 EVENT CODE : N501<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 9:30am - 5:00pm<br />.<br />📍 VENUE : 7th Floor Drawing Hall, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES :<br />▪Team of 8 (4v4) - Rs.100/ participant<br />▪Team of 4 - Rs.120/participant<br />▪Single participant- Rs.150/participant (we will form the team)<br />.<br />📞 CONTACT :<br />Shrenik Dhamane (@Shrenikdhamane) : 9987056005<br />Rahul Panda (@panda_rahul) : 8976722740<br />.
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer red-accent-1">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade mrmsnucleus event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header indigo-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           MR AND MS NUCLUES<br />.<br />You think you have the brains to keep all the others behind in terms of technical knowledge?<br />Participate and be the Mr and Ms Nucleus 2018!<br />.<br />RULES AND REGULATIONS :<br />Under the title of Mr and Mrs Nucleuswe would have 3 primary events Technical, debate, technical quiz and place yourself<br />▪Technical debate-<br />Two teams will put forth their idea for or against the topic in pairs of two.<br />The best qualifying team would be moving ahead to round 2<br />▪Technical quiz-<br />This will be an individual performing round.<br />There will be MCQ's with respect to updated technology, social network and other basic technical aspects etc<br />The individual who qualify from this round will move to the final round<br />▪Place yourself-<br />This round would be attempt to prove yourself the best.<br />An aptitude test/group discussion/personal interview would be conducted on decision by the judges.<br />The best 2 performers would be felicitated with the tag of Mr & Mrs nucleus.<br />.<br />📌 CATEGORY : Technical<br />.<br />🔖 EVENT CODE : N403<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />.<br />⏰ TIME : 12 pm to 5 pm<br />.<br />📍 VENUE : 7th Floor Auditorium, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES :<br />₹40 (IEEE Member)<br />₹20 (Non IEEE Member)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹1000worth<br />.<br />📞 CONTACT :<br />Pawan Pandey (@pawan_pandey): 9702247599<br />Hrutuja Kurdhundkar (@happy_rutu0897):8879345834
+
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer indigo-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade techexpo event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header light-green-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal€_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           'TECHNICAL EXPOSITION'<br />PROJECT PRESENTATION Competition<br />.<br />To all the innovative technological masterminds!<br />Get ready to bring out the engineer in you, applying your skills and knoweledge.<br />.<br />Here's an opportunity to showcase your technical prowess. If you have an innovative electronic or electrical project, now you have a platfom to exhibit it and compete with others.<br />.<br />RULES AND REGULATIONS :<br />1. Projects should be strictly technical or technology based.<br />2. You will get 10 minutes to present your project and it's working.<br />3. Final decision will be taken by judges.<br />.<br />Looking forward to see your mind blowing project ideas.If you have a curious mind join us a spectators and get inspired to make your own project in future. If you have any doubts or queries, you can reach us on the given numbers.<br />.<br />📌 CATEGORY: Technical<br />.<br />🔖 EVENT CODE: N402<br />.<br />💵 REGISTRATION FEES :<br />₹100 (IEEE Members)<br />₹110 (Non IEEE Members)<br />.<br />🏆PRIZE MONEY<br />🥇FIRST: ₹3000 worth<br />.<br />📆 DATE / DAY :<br />8th March, Thursday<br />.<br />⏰ TIME : 9.00 am<br />.<br />📍VENUE :<br />Shah And Anchor Kutchhi Engineering College, Chembur, Mumbai-88<br />.<br />📞 CONTACT :<br />Arnika Phatak (@arnika_phatak) - 9757422821<br />Yashashree Khade (@yashashree___) - 8850440537
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer light-green-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal fade technokagaz event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header grey-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            'TECHNOKAGAZ'<br />A NATIONAL LEVEL<br />TECHNICAL PAPER PRESENTATION Competition.<br />.<br />A right platform for you to showcase your talent and enlighten the world with what you are aware of.<br />.<br />RULES AND REGULATION :<br />1. Teams should have 2 to 4 members.<br />2. Papers should be strictly written in IEEE format.<br />3. Selected teams will be called for presentation<br />4. 8 minutes will be given for presenting your paper and 2 minutes will be for Q and A round.<br />5. Plagiarized papers/abstracts will be disqualified on the spot.<br />.<br />Last date for the submission of papers is 5th March 2018.<br />.<br />EMAIL ID :<br />technokagaz@gmail.com<br />.<br />Remember to carve every word before you let it fall.<br />All the best!💫<br />.<br />REGISTERATION LINK :<br />https://goo.gl/ERPVQm<br />.<br />📌 CATEGORY : Technical<br />.<br />🔖 EVENT CODE : N402<br />.<br />💵REGISTERATION FEES :<br />₹ 100 (IEEE members)<br />₹ 110 (Non-IEEE members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹ 5000/- worth<br />🥈 SECOND : ₹ 3000/- worth<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />.<br />⏰ TIME : 12 pm<br />.<br />📍 VENUE : 7th Floor Auditorium, Shah And Anchor Kutchhi Engineering College, Chembur, Mumbai-88<br />.<br />📞 CONTACT :<br />Urvi Bhimani (@u.bhimani)- 9702486960<br />Antara Upadhyay (@antara_u)- 9673360702
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer grey-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade linefollower event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header purple-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            LINE FOLLOWER<br />.<br />A Line Follower Robot, as the name suggests, is an automated guided vehicle, which follow a visual line. The Main motto of the event is to code the bot and follow the path provided and emerge victorious<br />.<br />RULES AND REGULATIONS :<br />1. The bot will be based on arduino<br />2. Coding has to done using c language<br />3. A skeleton of code will be provided.<br />4. Coder has to program the sensors.<br />5. The bot can be programmed multiple times<br />6. The time will start from the 1st coding and will end only when the bot crosses the finish line.<br />7. Coding time + time taken by the bot to follow the path will be considered.<br />8. If the bot leaves the given path a penalty of 5 seconds will be added.<br />9. If the bot leaves the path more than 5 times. It has to be programmed again.<br />.<br />📌 CATEGORY: Robotics<br />.<br />🔖 EVENT CODE : N403<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 9am to 5pm<br />.<br />📍 VENUE : 7th Floor Auditorium, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES :<br />₹20 (IEEE Members)<br />₹40 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹2000worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Gaurav Rai : 9969519943<br />Manan Mehta : 9920886762<br />
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer purple-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="modal fade drone event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header red-accent-1" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            DRONE<br />.<br />An event which would test how well u can coordinate with ur team mate for the victory!<br />.<br />RULES AND REGULATIONS :<br />1. Event will be played by only one person.<br />2. Participant can bring his/her own drone if it fits in rules and regulations.<br />3. A participant cannot skip an obstacle, that it is an compulsion to complete all the obstacles.<br />4. A penalty time will be added to the final time if the drone falls down<br />5. Player has to finish the given task in the shortest possible time including penalties.<br />6. The team with the shortest split time at the end of the day will be declared the winner.<br />.<br />📌 CATEGORY : Robotics<br />.<br />🔖 EVENT CODE :N309<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 9am to 5pm<br />.<br />📍 VENUE: Foyer, SAKEC, Chembur, Mumbai<br />.<br />💵 REGISTRATION FEES :<br />₹20 (IEEE Members)<br />₹40 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹2000worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Pratik Kadam (@pratikkkadam): 8422030950<br />Chinmay Yadav(@chinmay_yadav19): 9969033706
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer red-accent-1">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade aquabot event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header blue-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           ⚽🚤 AQUABOTICS 🚤⚽<br />.<br />RULES AND REGULATIONS :<br />1)Players have to score with help of bots🚤 provided to them.<br />2)Once the player gets hold of the ball he/she has to put the ball into a post that is provided to them.<br />3)Player with maximum number of goals wins<br />.<br />📌 CATEGORY: Robotics<br />.<br />🔖 EVENT CODE:N308<br />.<br />📆 DATE / DAY :<br />7th March(Wednesday)<br />8th March(Thursday)<br />.<br />⏰ TIME : 10am to 5pm<br />.<br />📍 VENUE:SAKEC, Chembur, Mumbai<br />.<br />💵 REGISTRATION FEES :<br />₹20 (IEEE Member)<br />₹30 (Non IEEE Member)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Usham Sabrawal (@usham_singh):9167460109<br />Amit Bhosale (@amit_b98):9987041084<br />.<br />.<br />#Pratishtha<br />#Nucleus<br />#TechnicalFestival<br />#Carnival_La_Fiesta<br />#AQUABOTICS<br />.
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer blue-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade confusedbot event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header light-green-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            CONFUSED BOT<br />.<br />An event which would test how well u can coordinate with ur team mate for the victory!<br />.<br />RULES AND REGULATIONS :<br />1. Event will be played by a team of two.<br />2. One person will control the left half of the bot and other person will control the right half of the bot to complete the track.<br />3. A participant cannot skip an obstacle, that it is an compulsion to complete all the obstacles.<br />4. A penalty time will be added to the final time if the boy falls of the track.<br />5. Player has to finish the given track in the shortest possible time including penalties.<br />6. The team with the shortest split time at the end of the day will be declared the winner.<br />.<br />📌 CATEGORY: Robotics<br />.<br />🔖 EVENT CODE : N304<br />.<br />📆 DATE / DAY : 7th March / Wednesday.<br />8th March / Thursday.<br />.<br />⏰ TIME : 9am to 5pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />.<br />💵 REGISTRATION FEES :<br />₹20 (IEEE Members)<br />₹40 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Prathamash khopkar (@prathamesh.khopkar) : +91 86521 86403<br />Rahul Gupte (@rahulgupte12) :+91 9920663220
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer light-green-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade camobot event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header red-accent-1" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            CAM-O-BOT 📸🤖🚙<br />.<br />RULES AND REGULATIONS :<br />.<br />1. There will be a team of 2 participants<br />.<br />2.If the car falls down 2 times,the player has to restart playing the game<br />.<br />3. The player will be given 2 chances to restart the game and complete the maze,If they aren't able to make it,the best of two timings will be noted down for further judgement.<br />.<br />4. If the participant gets confused about the path,they can ask for a penalty of 30 seconds and the volunteer will place the bot on proper track<br />.<br />📆 DATE / DAY: 7th-8th March 2018, Wednesday-Thursday<br />.<br />⏰ TIME : 10 am to 5 pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />.<br />🔖 EVENT CODE : N306<br />.<br />REGISTRATION FEES💵:<br />₹20 (IEEE Members)<br />₹30 (Non IEEE Members)<br />.<br />₹ 🏆 PRIZE MONEY<br />🥇 FIRST : ₹2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Nishad Rane (@nishadrane97): 7506641231<br />Purva Desai (@purvadesaii):9969179966
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer red-accent-1">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade cablecrane event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header indigo-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            CABLE CRANE<br />.<br />an event which would test how well u can coordinate with ur team mate for the victory<br />.<br />RULES AND REGULATIONS :<br />1. Event will be played by team of two. (One for driving bot & other for crane)<br />2. Participant can bring his/her own bot (crane is provided) if it fits in rules and regulations.<br />3. A participant cannot skip an obstacle, that it is an compulsion to complete all the obstacles.<br />4. A penalty time will be added to the final time if the boy falls of the track.<br />5. Player has to finish the given track in the shortest possible time including penalties.<br />6. The team with the shortest split time at the end of the day will be declared the winner.<br />.<br />📌 CATEGORY: Robotics<br />.<br />🔖 EVENT CODE :N305<br />.<br />📆 DATE / DAY :<br />7th March / Wednesday.<br />8th March / Thursday<br />.<br />⏰ TIME : 9am to 5pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />.<br />💵 REGISTRATION FEES :<br />.<br />₹20 IEEE MEMBERS<br />₹40 NON IEEE MEMBERS<br />.<br />🏆 PRIZE MONEY<br />FIRST : ₹ 2000worth<br />SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Aarushi shetty(@arushishetty): 8080772816<br />Saurabh parekh(@parekhsaurabh9): 983337793
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer indigo-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade robosoccer event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header cyan-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            ⚽ROBO SOCCER⚽<br />.<br />RULES AND REGULATIONS:<br />1. This event will be played one on one.<br />2. Players have to score with the help of bots provided to them.<br />3. Once the player gets hold of the ball, he/she has to put the ball into a post that is assigned to them.<br />4. Players with maximum number of goals wins.<br />.<br />📆 DATE / DAY :<br />7th March(Wednesday)<br />8th March(Thursday)<br />.<br />⏰ TIME : 10am to 5pm<br />.<br />📍 VENUE :SAKEC, Chembur, Mumbai .<br />.<br />🔖 EVENT CODE : .<br />.<br />💵 REGISTRATION FEES:<br />₹20 (IEEE Members)<br />₹30 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹ 2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Shivani Surti : 9769706473<br />Nikhil Sharma : 9702412698<br />
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer cyan-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade l2grandprix event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header pink-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+          L2 GRANDPRIX<br />.<br />An event which would test how well u can coordinate with ur team mate for the victory!<br />.<br />RULES AND REGULATIONS :<br />1. Event will be played by only one person.<br />2. Participant can bring his/her own bot if it fits in rules and regulations.<br />3. A participant cannot skip an obstacle, that it is an compulsion to complete all the obstacles.<br />4. A penalty time will be added to the final time if the boy falls of the track.<br />5. Player has to finish the given track in the shortest possible time including penalties.<br />6. The team with the shortest split time at the end of the day will be declared the winner.<br />.<br />📌 CATEGORY : Robotics<br />.<br />🔖 EVENT CODE : N304<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />⏰ TIME : 9am to 5pm<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES:<br />₹20 (IEEE Members)<br />₹30 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹ 2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Ishan Lokhande (@ishanlokhande): 7303004557<br />Rupesh Saw (@rupesh_011): 8689864435
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer pink-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade robosumo event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header amber-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            🛠 ROBOSUMO 🛠<br />.<br />Get'em out of the ring<br />Sometimes brains over bodyj ust wont work, sheer might will help. Sakec pratishta presents ROBOSUMO a game of sheer strength and manuverability of Robots. Fight against your opponents and throw them out of the marked circle to show who's the strongest of them.<br />.<br />RULES AND REGULATIONS :<br />⚫The robot must fit within a square box of following dimensions,<br />Width: 30cm, Length: 30cm, Height:30cm<br />⚫The total mass of the robot must not exceed 15kgs ⚫Robots can be autonomous or remote controlled. Wired or wireless remotes can be<br />used.<br />⚫Teams using wireless robots should use multi frequency remotes to avoid<br />frequency interference.<br />⚫In case of wired bots, the wires should remain slack during the fight.<br />⚫Use of pneumatics, hydraulics, inflammable liquids, flame weapons, glue,<br />RF jammers, and electromagnets systems is strictly prohibited.<br />Arena : 120cm<br />.<br />📌 CATEGORY : Robotics<br />.<br />🔖 EVENT CODE : N302<br />.<br />📆 DATE / DAY :<br />8th March (Thursday)<br />9th March 2018 (Friday)<br />.<br />⏰ TIME : 9am onwards<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES:<br />₹20 (IEEE Members)<br />₹30 (Non IEEE Members)<br />.<br />🏆 PRIZE MONEY<br />🥇 FIRST : ₹ 2000 worth<br />🥈 SECOND : ₹1500 worth<br />.<br />📞 CONTACT :<br />Nemeen Shah (@nematic_yt): 8693058279<br />Amogh Angre (@amogh_angre): 9664028398<br />
+
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer amber-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade robowars event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header grey-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           ⚡ 🚧⚙ROBOWARS⚙🚧⚡<br />.<br />Autobots tranform and roll out!<br />.<br />Fit in the screws and arm your bot, experince the ultimate battle of robots, where metal beats metal, scratching tearing and destroying each other. If you think you have the skills to make a battle bot and give your opponent the tatse of defeat, SAKEC PRATISHTA presents robowars, a robot fighting competition.<br />.<br />Be near the arena to maneur your bot or be there to experinece sheer thrill of robots smashing each other.<br />.<br />The dimensions of arena are 16*16*6,which has a metal flooring and well protected POLYCARBONATE walls<br />.<br />Then come along to compete with the finest robowarriors from across the nation..<br />.<br />RULES AND REGULATIONS<br />🔸There are two categories for the bot: 30kg and 15kg<br />🔸The bot should fit in a box of dimensions:600mm600mm6000mm<br />🔸Jumping and hopping is not allowed<br />🔸The bot can be controlled by wired or wireless remote<br />🔸Change of batteries will not be allowed during the match<br />🔸For further rules and regulations contact the coordinators<br />.<br />📌 CATEGORY : Robotics<br />.<br />🔖 EVENT CODE : N301<br />.<br />📆 DATE / DAY :<br />8th March 2018 (Thursday )<br />.<br />📍 VENUE:<br />Shah & Anchor Kutchhi Engineering College Chembur, Mumbai400088<br />.<br />💵 REGISTRATION FEES :<br />₹1000 for 30kg category<br />₹700 for 15kg category<br />.<br />🏆 PRIZE MONEY<br />🥇 WINNER : ₹ 25,000 worth (30kg)<br />₹ 12,500 worth (15kg)<br />.<br />📞 CONTACT :<br />Manthan Shah (@manthan_shahinsta): 9167735431<br />Mohit Bhanushali (@mohitbhanushali98): 9619177797
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer grey-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade codeathon event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header purple-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            ⌨ Code-a-thon ⌨<br />.<br />Put your coding caps on! 🧢<br />Prepare yourself for solving puzzling challenges!<br />There will be 3 rounds in the Code-a-thon<br />.<br />ROUND 1 :<br />This round the participants will have to arrange the lines of the code to get the desired output,this round will not involve actual typing of code but will just get the participants ready for the further rounds!<br />This round will have problems in C language.<br />.<br />ROUND 2 :<br />This round would require participants to understand the pre-cooked code and predict the output of the code.<br />This round will focus on how correctly and how fast can the participant grasp code written by somebody else.<br />For each of the problem the participants will have an option to view the code in Java or in C.<br />.<br />ROUND 3 :<br />This round will directly test the problem solving ability. It will also involve understanding of basic data structures and algorithms.<br />It is a closed contest hosted on codechef allowing upto 50 languages to submit solutions.<br />The contest will use IOI style ranklist.<br />Contestants will be ranked based on the score they get.<br />There are no penalties for wrong submissions.<br />.<br />RULES AND REGULATIONS :<br />🔹Individual participation.<br />🔹Blank sheets and pens are allowed.<br />🔹Round 1 and 2 will be offline rounds conducted on pen and paper.<br />🔹In round 3, use of any online or offline IDE is allowed as long as the code isn’t viewable to others.<br />.<br />📌 CATEGORY : Gaming<br />.<br />🔖EVENT CODE : N201<br />.<br />📆 DATE / DAY :<br />7th March 2018 (Wednesday)<br />.<br />⏰ TIME : 12.00-3.00pm<br />.<br />📍 VENUE: Lab 611,612,613 MMS Section<br />.<br />💵 REGISTRATION FEES:<br />₹30 (IEEE member)<br />₹40 (Non-IEEE member)<br />.<br />PRIZES :<br />🥇 FIRST: ₹1500 worth<br />🥈SECOND: ₹1000 worth<br />.<br />📞 CONTACT<br />Shreyas Nanaware : 9869852839<br />Rushabh Mehta (@rushabh095) : 9619478222
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer purple-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade vr_gaming event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header blue-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+           VR Gaming.<br />.<br />Virtual reality gaming is the application of a three-dimensional (3-D) artificial environment to computer games.<br />.<br />Experience Oculus VR demo arranged by Atulsia Technologies Private Limited.<br />.<br />RULES AND REGULATIONS:<br />Each one of the students will be given 5 mins to play the game.<br />Property should not be damaged<br />.<br />📌 CATEGORY: Gaming<br />.<br />🔖 EVENT CODE : N103<br />.<br />📆 DATE / DAY :<br />7th March (Wednesday)<br />8th March (Thursday)<br />.<br />⏰ TIME : 9:00am-5:00pm<br />.<br />📍VENUE : Foyer, SAKEC, Chembur, Mumbai<br />https://g.co/kgs/kXHY3W<br />.<br />💵 REGISTRATION FEES:<br />₹20 (IEEE members)<br />₹30 (Non members)<br />.<br />📞 CONTACT :<br />Komal Gajara (@komalgajara): 7045556258<br />Manpreet Oberoi (@manu_oberoi): 9869817689
+
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer blue-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade mob_gaming event_modal" role="dialog" aria-labelledby="lan_gamingLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header light-green-lighten-3" style="text-align: center;">
+          <div class="modal-title event_modal_title" style="display: inline-block; font-size: 26px; text-align: center; width: 100%; font-weight: 600;">Lan Gaming</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="font-size: 30px; font-family: 'Raleway';">x</span>
+          </button>
+        </div>
+        <div class="modal-body event_modal_content">
+          <p style="text-align: center;font-weight: 600;font-family: cursive;font-size: medium;;">
+            <span class="emc_pratishtha">🎆 PRATISHTHA 2018🎆</span><br /><br />
+            <span class="emc_clg">Shah and Anchor Kutchhi Engineering College</span>’s very own Annual Symposium is an amalgam of culture, sports & technical fiesta!<br /> <br />
+
+            <span class="emc_head_name">🎪🔌 NUCLEUS 💡🎉</span><br />
+            The Annual Technical Symposium brings to you the<br /><br />
+
+            MOBILE GAMING<br />.<br />RULES AND REGULATIONS :<br />.<br />1-Mini Militia - Per Team 5 members<br />💵 REGISTRATION FEES : ₹50/team<br />.<br />2-Ludo King -Single player<br />💵 REGISTRATION FEES : ₹10/player<br />.<br />3-Bomb squad- Per team 5 members<br />💵 REGISTRATION FEES : ₹50/team<br />.<br />📌CATEGORY: Gaming<br />.<br />🔖 EVENT CODE : N102<br />.<br />📆 DATE / DAY :<br />7 th and 8 th March 2018<br />.<br />⏰ TIME :<br />9 AM to 5 AM<br />.<br />📍 VENUE : Foyer, SAKEC, Chembur, Mumbai<br />.<br />🏆 PRIZE<br />-50℅ Discount coupon from ICECRAFT<br />-Exciting Gifts<br />-Donation Certificate<br />.<br />Winner/Winning team will get a chance to volunteer in HUMAN TEAM FOUNDATION’s social event and will get a volunteering Certificate<br />.<br />📞 CONTACT :<br />Niraj Mishra (@mishra_niraj): 9769406488<br />Riddhik Pankhania : 8097143980
+            
+          </p>
+        </div>
+        <div class="modal-footer event_modal_footer light-green-lighten-3">
+          #Pratishtha<br />
+          #Nucleus<br />
+          #TechnicalFestival<br />
+          #Carnival - La Fiesta <br />
+          #LanGaming<br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.animate-colors-min.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <!-- floating social -->
+  <script>
+    var image = '<img src="http://hd.wallpaperswide.com/thumbs/balck_and_white-t2.jpg">';
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({placement: 'bottom', content: image, html: true});   
+    });
+
+  </script>
+  <!-- fullpage scrolling -->
+  <script>
+
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        scrollOverflow: true,
+        anchors:['firstPage', 'secondPage', 'thirdPage']
       });
 
-    </script>
-    <!-- fullpage scrolling -->
-    <script>
-
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          scrollOverflow: true,
-          anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
-        });
-
-        $("#scroll-down").click(function() {
-          $(location).attr('href', "#secondPage");
-        });
-
-        $("#council-container").click(function(){
-          $(location).attr('href', "council.html");
-        });
-
-        $("#events-container").click(function(){
-          $('.daysModal').modal('toggle');
-        });
-
-        $("#gallery-container").click(function(){
-          $(location).attr('href', "gallery.html");
-        });
+      $("#scroll-down").click(function() {
+        $(location).attr('href', "#secondPage");
       });
-    </script>
-  </body>
+
+      $("#council-container").click(function(){
+        $(location).attr('href', "council/index.html");
+      });
+
+      $("#events-container").click(function(){
+        $('.daysModal').modal('toggle');
+      });
+    });
+  </script>
+</body>
 </html>
