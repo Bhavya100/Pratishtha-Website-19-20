@@ -75,15 +75,17 @@ a {
   transform: translateX(-50%);
 }
 /* for mobile hide */
-@media only screen and (min-width: 320px) and (max-width: 480) {
+@media only screen and (max-width: 480px) {
   .mobile-hide{
     display: none;
+    /* background: url(../images/moon/phase_third_quarter.jpg) */
   }
 }
 /* for mobile show */
 @media only screen and (min-width: 320px) and (max-width: 480) {
   .mobile-show{
     display: none;
+    /* background: url(../images/moon/phase_third_quarter_mobile.jpg) */
   }
 }
 
@@ -100,6 +102,11 @@ a {
 .about-container {
   background: radial-gradient(circle at bottom, navy 0, black 100%);
   height: 100vh;
+  overflow: hidden;
+}
+.council-container {
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  /* height: 100%; */
   overflow: hidden;
 }
 .justify-content-center {
