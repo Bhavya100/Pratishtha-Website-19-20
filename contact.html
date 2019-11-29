@@ -38,6 +38,7 @@
 	          <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
               <li class="nav-item"><a href="council.html" class="nav-link"><span>Council</span></a></li>
               <li class="nav-item"><a href="nucleus.html" class="nav-link"><span>Nucleus</span></a></li>
+              <li class="nav-item"><a href="#" class="nav-link"><span>Olympus</span></a><ul class="dropdown"><li><a href="inter.html">Inter-Sports</a></li><li><a href="intra.html">Intra-Sports</a></li></ul></li>
 	          <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal">Trust Board</a></li>
 	          <li class="nav-item"><a href="calendar.html" class="nav-link"><span>Events Calendar</span></a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link"><span>Contact Us</span></a></li>
@@ -64,14 +65,14 @@
         </div>
       </div>
       <div class="mouse">
-				<a href="#" class="mouse-icon">
+				<a href="#contact" class="mouse-icon">
 					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
 				</a>
 			</div>
     </section>
 
 
-    <section class="ftco-section contact-section ftco-no-pb" >
+    <section class="ftco-section contact-section ftco-no-pb" id="contact">
             <div class="container">
                 <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
@@ -126,7 +127,7 @@
                     </div>
               </div>
 
-              <p><iframe align:center width="100%"
+              <p><iframe align:center width="100%" height="375px"
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Shah+and+Anchor+Kutchhi+Engineering+College,+Govandi,+Mumbai,+Maharashtra,+India&amp;aq=0&amp;oq=shah+and+an&amp;sll=37.0625,-95.677068&amp;sspn=34.945679,86.572266&amp;ie=UTF8&amp;hq=Shah+and+Anchor+Kutchhi+Engineering+College,+Govandi,+Mumbai,+Maharashtra,+India&amp;ll=19.048219,72.91165&amp;spn=0.021094,0.032015&amp;t=m&amp;output=embed"&gt;><br />
                 </iframe><br/>
                 </p>
@@ -182,6 +183,33 @@
     <script src="js/scrollax.min.js"></script>
     
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
 
 </body>
 </html>

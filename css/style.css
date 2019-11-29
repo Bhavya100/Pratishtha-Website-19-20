@@ -46,6 +46,21 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+  ul li ul.dropdown{
+    min-width: auto; /* Set width of the dropdown */
+    background: transparent;
+    display: none;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown{
+    display: block;	/* Display the dropdown */
+}
+ul li ul.dropdown li{
+    display: block;
+}
+  
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
