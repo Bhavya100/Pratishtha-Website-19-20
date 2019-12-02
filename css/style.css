@@ -59,6 +59,21 @@ ul li:hover ul.dropdown{
 ul li ul.dropdown li{
     display: block;
 }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
   
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
