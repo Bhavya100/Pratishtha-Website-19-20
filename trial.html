@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .toi{
+            position: relative;
+            width:200px;
+            height: 200px;
+            background-size: 150%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: 0.5s;
+        }
+        .toi:hover{
+            background-size: 170%;
+        }
+        .toi:after{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            word-wrap: break-word;
+            overflow: hidden;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: 10px;
+            opacity: 0%;
+            content: attr(text);
+            transition: 0.5s;
+        }
+        .toi:hover:after{
+            opacity: 1;
+        }
+    </style>
+
+
+
+    <div class="toi" style="background-image: url(https://miro.medium.com/max/8256/1*5lpiSFo6j5dhrr6Z6RFd8Q.jpeg);"
+      text="lorem ipsum BioConvergence is, put simply,a to innovation. Technically it’s the convergence of biological, physical, and computing technologies inspired by nature. This field is now developing some of the most exciting and" >
+
+    </div>
+
+
+
+</body>
+</html>
