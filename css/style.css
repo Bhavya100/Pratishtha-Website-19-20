@@ -195,6 +195,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
+h1{
+  font-family: 'Mael';
+  font-size: 80px !important;
+  letter-spacing: .95mm;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
@@ -8522,9 +8528,10 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .1;
-    width: 50%;
-    background: #3e64ff; }
+    opacity: 40%;
+    width: 100%;
+    
+   }
   .hero-wrap .text {
     width: 100%; }
 
