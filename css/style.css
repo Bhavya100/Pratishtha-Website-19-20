@@ -8550,10 +8550,12 @@ h1, h2, h3, h4, h5,
       font-size: 40px; } }
 
 .slider-text h2 {
-  font-weight: 800; }
+  font-weight: 300; }
   .slider-text h2 span {
-    color: #3e64ff;
-    text-decoration: underline; }
+    color: black;
+  font-size: 3rem;
+  font-family: monospace;
+}
 
 .slider-text p {
   font-size: 20px;
