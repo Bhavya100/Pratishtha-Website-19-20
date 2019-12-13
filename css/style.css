@@ -83,7 +83,7 @@ ul li ul.dropdown li{
   position: relative;
   text-align: center;
   cursor: default;
-  background: #3e64ff;
+  background: #fff;
 }
 
 .hovereffect .overlay {
@@ -147,7 +147,7 @@ ul li ul.dropdown li{
 }
 
 .hovereffect a, .hovereffect p {
-  color: #FFF;
+  color: #3E64FF;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
