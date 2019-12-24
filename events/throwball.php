@@ -18,7 +18,7 @@
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
-		
+
 		  gtag('config', 'UA-71546305-5');
 		</script>
 
@@ -31,14 +31,14 @@
 				<!-- Intro -->
 					<section class="intro">
 						<header>
-							<h1>Basketball</h1>
-							<p>Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketbal</p>
+							<h1>Throwball</h1>
+							<p>Throwball is a non-contact ball sport played across a net between two teams of nine players on a rectangular court.</p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
 						<div class="content">
-							<span class="image fill" data-position="center"><img src="games/bb.jpg" alt="" /></span>
+							<span class="image fill" data-position="center"><img src="games/tb.jpg" alt="" /></span>
 						</div>
 					</section>
 
@@ -49,7 +49,7 @@
 						</header>
 						<div class="content">
 							<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-							
+
 						</div>
 					</section>
 
@@ -72,96 +72,38 @@
 								<h2>Points Table</h2>
 							</header>
 							<div class="content">
-								
+
 								<div class="table-wrapper">
 									<table class="alt">
 										<thead>
 											<tr>
 												<th><strong>Team</strong></th>
-												
+
 												<th><strong>Points</strong></th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>FE Comps</td>
-												<td>10</td>
+												<?php
+												include '../admin/includes/connect.php';
+$q="select class,throwball from olympus_points_g order by throwball DESC";
+$r=mysqli_query($conn,$q);
+while($row=mysqli_fetch_array($r))
+{
+												 ?>
+												<td><?php echo $row['class']; ?></td>
+												<td><?php echo $row['throwball'] ?></td>
 											</tr>
-											<tr>
-												<td>FE IT</td>
-												<td>40</td>
-											</tr>
-											<tr>
-												<td>FE Extc</td>
-												<td>80</td>
-											</tr>
-											<tr>
-													<td>FE Eletronics</td>
-													<td>80</td>
-											</tr>
-											<tr>
-													<td>SE Comps</td>
-													<td>10</td>
-												</tr>
-												<tr>
-													<td>SE IT</td>
-													<td>40</td>
-												</tr>
-												<tr>
-													<td>SE Extc</td>
-													<td>80</td>
-												</tr>
-												<tr>
-														<td>SE Eletronics</td>
-														<td>80</td>
-												</tr>
-												<tr>
-														<td>TEComps</td>
-														<td>10</td>
-													</tr>
-													<tr>
-														<td>TE IT</td>
-														<td>40</td>
-													</tr>
-													<tr>
-														<td>TE Extc</td>
-														<td>80</td>
-													</tr>
-													<tr>
-															<td>TE Eletronics</td>
-															<td>80</td>
-													</tr>
-													<tr>
-															<td>BE Comps</td>
-															<td>10</td>
-														</tr>
-														<tr>
-															<td>BE IT</td>
-															<td>40</td>
-														</tr>
-														<tr>
-															<td>BE Extc</td>
-															<td>80</td>
-														</tr>
-														<tr>
-																<td>BE Eletronics</td>
-																<td>80</td>
-														</tr>
-														<tr>
-																<td>Council</td>
-																<td>80</td>
-														</tr>
-											
-											
+<?php } ?>
+
 										</tbody>
-										
+
 									</table>
 								</div>
-	
-	
+
+
 							</div>
 						</section>
-
 				<!-- Section -->
 				<section>
 					<header>
@@ -176,25 +118,25 @@
 								<thead>
 									<tr>
 										<th>Position</th>
-								
+
 										<th>Prizes</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>1st</td>
-										
+
 										<td>1000/-</td>
 									</tr>
 									<tr>
 										<td>2nd</td>
-										
+
 										<td>4000/-</td>
 									</tr>
-									
-									
+
+
 								</tbody>
-								
+
 							</table>
 						</div>
 
@@ -224,19 +166,19 @@
 						<p><strong>Sample text</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
 						<ul class="actions">
 							<li><a href="#" class="button primary large">Register</a></li>
-							<li><a href="#" class="button large">Brochure</a></li> 
+							<li><a href="#" class="button large">Brochure</a></li>
 						</ul>
 					</div>
 				</section>
 
 
 
-							
 
-				
+
+
 				<!-- Copyright -->
 
-				
+
 
 					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="#">By Krutik Patel</a>.</div>
 

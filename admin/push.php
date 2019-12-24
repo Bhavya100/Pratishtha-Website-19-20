@@ -11,12 +11,16 @@ if(isset($_POST['submit']) )
 				//echo $q;
 				$q1="update olympus_points_b set ".$s."=-10 where ".$s."=0 and class!='".$i."'";
 				mysqli_query($conn,$q1);
+				header("location:dashboard.php");
+				exit();
 			}
 			if($type=='girls'){
 				$q="update olympus_points_g set ".$s."=10 where class='".$i."'";
 				mysqli_query($conn,$q);
 				$q1="update olympus_points_g set ".$s."=-10 where ".$s."=0 and class!='".$i."'";
 				mysqli_query($conn,$q1);
+				header("location:dashboard.php");
+				exit();
 			}
 }
 }

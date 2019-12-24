@@ -9,12 +9,22 @@ if(isset($_POST['submit']) )
   if($type=='boys'){
     $q="update olympus_winners set winner_boys='".$winner."', runnerup_boys='".$runner."' where sports='".$s."'";
     mysqli_query($conn,$q);
-    echo $q;
+    $q1="update olympus_points_b set $s=30 where class='$winner'";
+    mysqli_query($conn,$q1);
+    $q2="update olympus_points_b set $s=20 where class='$runner'";
+    mysqli_query($conn,$q2);
+    header("location:dashboard.php");
+    exit();
   }
   if($type=='girls'){
     $q="update olympus_winners set winner_girls='".$winner."', runnerup_girls='".$runner."' where sports='".$s."'";
     mysqli_query($conn,$q);
-    echo $q;
+    $q1="update olympus_points_g set $s=30 where class='$winner'";
+    mysqli_query($conn,$q1);
+    $q2="update olympus_points_g set $s=20 where class='$runner'";
+    mysqli_query($conn,$q2);
+    header("location:dashboard.php");
+    exit();
   }
 }
  ?>
