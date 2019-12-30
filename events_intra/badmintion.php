@@ -49,44 +49,32 @@
 						</div>
 					</section>
 
-					<!-- Section -->
-					<section>
+				<!-- Section -->
+				<section>
 						<header>
-							<h2>Rules</h2>
+							<h2>Venue</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
-
-
+							<p><strong>Sample Venue</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
 
 						</div>
 					</section>
 
-					<!-- Section -->
+				<!--Section-->
 				<section>
 					<header>
-						<h2>Winners Boys</h2>
+						<h2>Event Coordinators</h2>
 					</header>
 					<div class="content">
 						<ul class="alt">
-							<li><h2>1st Place</h2><h3> Name <br><br></h3></li>
-							<li><h2>1st Runner Up</h2><h3> Name <br><br></h3></li>
+							<li><h2>Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
+							<li><h2>Co-Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
 						</ul>
 					</div>
 				</section>
+	
 
-									<!-- Section -->
-									<section>
-					<header>
-						<h2>Winners Girls</h2>
-					</header>
-					<div class="content">
-						<ul class="alt">
-							<li><h2>1st Place</h2><h3> Name <br><br></h3></li>
-							<li><h2>1st Runner Up</h2><h3> Name <br><br></h3></li>
-						</ul>
-					</div>
-				</section>
+				
 
 
 					<!-- Section -->
@@ -128,85 +116,27 @@ while($row=mysqli_fetch_array($r))
 							</div>
 						</section>
 
+				
+				
+				
+
 				<!-- Section -->
 				<section>
-					<header>
-						<h2>Prizes</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample Fee</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+						<header>
+							<h2>Rules</h2>
+						</header>
+						<div class="content">
+							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
 
 
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Position</th>
 
-										<th>Prizes</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1st</td>
-
-										<td>1000/-</td>
-									</tr>
-									<tr>
-										<td>2nd</td>
-
-										<td>4000/-</td>
-									</tr>
-
-
-								</tbody>
-
-							</table>
 						</div>
-
-
-					</div>
-				</section>
-
-				<!--Section-->
-				<section>
-					<header>
-						<h2>Event Coordinators</h2>
-					</header>
-					<div class="content">
-						<ul class="alt">
-							<li><h2>Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
-							<li><h2>Co-Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Register now</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample text</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-						<ul class="actions">
-							<li><a href="#" class="button primary large">Register</a></li>
-							<li><a href="#" class="button large">Brochure</a></li>
-						</ul>
-					</div>
-				</section>
+					</section>
 
 
 
 
-
-
-				<!-- Copyright -->
-
-
-
-					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="#">By Krutik Patel</a>.</div>
-
-			</div>
+				
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
