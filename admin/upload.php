@@ -10,7 +10,7 @@ if($_SESSION['admin']==false){
     <title></title>
   </head>
   <body>
-    <form class="" action="includes/up.inc.php" method="post">
+    <form class="" action="includes/up.inc.php" method="post" enctype="multipart/form-data">
       <h1>Sports</h1>
        <select name="type">
           <option value="boys">Boys</option>
@@ -34,8 +34,10 @@ if($_SESSION['admin']==false){
       <option value="basketball">Dodgeball</option>
         </select>
 
-      <input type="file" name="pdf">
+      <input type="file" name="file">
       <input type="submit" name="submit" value="submit">
     </form>
+    <iframe src="pdf/boys-cricket.pdf"
+   width="800px" height="600px" >
   </body>
 </html>

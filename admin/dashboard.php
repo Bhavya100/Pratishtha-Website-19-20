@@ -13,6 +13,7 @@ if($_SESSION['admin']==false){
     <ul>
       <li><a href="admin.php"> participation </a></li>
       <li><a href="winners.php"> select winners </a></li>
+      <li><a href="upload.php"> upload PDF</a></li>
     </ul>
   </body>
 </html>
