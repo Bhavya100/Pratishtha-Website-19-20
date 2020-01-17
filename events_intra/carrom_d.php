@@ -9,6 +9,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="favicon_oly.ico"/>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71546305-5"></script>
     <script>
