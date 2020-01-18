@@ -1,4 +1,8 @@
-
+<?php session_start();
+if($_SESSION['admin']==false){
+  header("location:index.php");
+  exit();
+} ?>
 <html>
 <body>
 <form action="push1.php" method="POST">

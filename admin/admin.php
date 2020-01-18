@@ -1,3 +1,8 @@
+<?php session_start();
+if($_SESSION['admin']==false){
+  header("location:index.php");
+  exit();
+} ?>
 <html>
 
 <body>
