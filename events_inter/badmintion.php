@@ -173,13 +173,7 @@ while($row=mysqli_fetch_array($r))
 
 
 
-				<!-- Copyright -->
-
-
-
-					<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="#">By Krutik Patel</a>.</div>
-
-			</div>
+				
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
