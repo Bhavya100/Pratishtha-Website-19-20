@@ -57,239 +57,111 @@
 			</div>
 		</section>
 
+
+
 		<!-- Section -->
-		<section>
 
+		<section id="first">
+			<header>
+				<h2>Dates</h2>
 
+			</header>
 			<div class="content">
 
-				<div class="event hidden ">
+				<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
 
-
-
-					<ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Boys</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Girls</a>
-						</li>
-
-					</ul>
-
-				</div>
 			</div>
 		</section>
-		<div class="tab-content" id="pills-tabContent">
-			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-				<!-- Section -->
-				</br>
-				<section id="first">
-					<header>
-						<h2>Dates</h2>
 
-					</header>
-					<div class="content">
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Venue</h2>
+			</header>
+			<div class="content">
+				<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
 
-						<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Venue</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
-					</div>
-				</section>
-
-
-
-				<!--Section-->
-				<section>
-					<header>
-						<h2>Event Coordinators</h2>
-					</header>
-					<div class="content">
-						<ul class="alt">
-							<li>
-								<h2>Head:</h2>
-								<h3> Name <br><br>+91 23789090</h3>
-							</li>
-							<li>
-								<h2>Co-Head:</h2>
-								<h3> Name <br><br>+91 23789090</h3>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Points Table</h2>
-					</header>
-					<div class="content">
-
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th><strong>Team</strong></th>
-
-										<th><strong>Points</strong></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<?php
-										include '../admin/includes/connect.php';
-										$q = "select class,cricket from olympus_points_b order by cricket DESC";
-										$r = mysqli_query($conn, $q);
-										while ($row = mysqli_fetch_array($r)) {
-										?>
-											<td><?php echo $row['class']; ?></td>
-											<td><?php echo $row['cricket'] ?></td>
-									</tr>
-								<?php } ?>
-
-								</tbody>
-
-							</table>
-						</div>
-
-
-					</div>
-				</section>
-
-
-
-
-
-
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Rules</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
-
-
-
-					</div>
-				</section>
 			</div>
-			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-				</br>
-				<section id="first">
-					<header>
-						<h2>Dates</h2>
-
-					</header>
-					<div class="content">
-
-						<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Venue</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
-					</div>
-				</section>
+		</section>
 
 
 
-				<!--Section-->
-				<section>
-					<header>
-						<h2>Event Coordinators</h2>
-					</header>
-					<div class="content">
-						<ul class="alt">
-							<li>
-								<h2>Head:</h2>
-								<h3> Name <br><br>+91 23789090</h3>
-							</li>
-							<li>
-								<h2>Co-Head:</h2>
-								<h3> Name <br><br>+91 23789090</h3>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Points Table</h2>
-					</header>
-					<div class="content">
-
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th><strong>Team</strong></th>
-
-										<th><strong>Points</strong></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<?php
-										include '../admin/includes/connect.php';
-										$q = "select class,cricket from olympus_points_b order by cricket DESC";
-										$r = mysqli_query($conn, $q);
-										while ($row = mysqli_fetch_array($r)) {
-										?>
-											<td><?php echo $row['class']; ?></td>
-											<td><?php echo $row['cricket'] ?></td>
-									</tr>
-								<?php } ?>
-
-								</tbody>
-
-							</table>
-						</div>
-
-
-					</div>
-				</section>
-
-
-
-
-
-
-
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>Rules</h2>
-					</header>
-					<div class="content">
-						<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
-
-
-
-					</div>
-				</section>
+		<!--Section-->
+		<section>
+			<header>
+				<h2>Event Coordinators</h2>
+			</header>
+			<div class="content">
+				<ul class="alt">
+					<li>
+						<h2>Head:</h2>
+						<h3> Name <br><br>+91 23789090</h3>
+					</li>
+					<li>
+						<h2>Co-Head:</h2>
+						<h3> Name <br><br>+91 23789090</h3>
+					</li>
+				</ul>
 			</div>
+		</section>
 
-		</div>
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Points Table</h2>
+			</header>
+			<div class="content">
+
+				<div class="table-wrapper">
+					<table class="alt">
+						<thead>
+							<tr>
+								<th><strong>Team</strong></th>
+
+								<th><strong>Points</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<?php
+								include '../admin/includes/connect.php';
+								$q = "select class,cricket from olympus_points_b order by cricket DESC";
+								$r = mysqli_query($conn, $q);
+								while ($row = mysqli_fetch_array($r)) {
+								?>
+									<td><?php echo $row['class']; ?></td>
+									<td><?php echo $row['cricket'] ?></td>
+							</tr>
+						<?php } ?>
+
+						</tbody>
+
+					</table>
+				</div>
+
+
+			</div>
+		</section>
+
+
+
+
+
+
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Rules</h2>
+			</header>
+			<div class="content">
+				<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+
+
+
+			</div>
+		</section>
+
 
 
 
