@@ -68,7 +68,7 @@
 			</header>
 			<div class="content">
 
-				<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+				<p><strong>30 th January 2020</strong></p>
 
 			</div>
 		</section>
@@ -79,7 +79,7 @@
 				<h2>Venue</h2>
 			</header>
 			<div class="content">
-				<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+				<p><strong>Ground</strong></p>
 
 			</div>
 		</section>
@@ -95,11 +95,11 @@
 				<ul class="alt">
 					<li>
 						<h2>Head:</h2>
-						<h3> Name <br><br>+91 23789090</h3>
+						<h3> Yash kachave <br><br>+91 7083707000</h3>
 					</li>
 					<li>
 						<h2>Co-Head:</h2>
-						<h3> Name <br><br>+91 23789090</h3>
+						<h3> Sagar Chedda <br><br>+91 9773017758</h3>
 					</li>
 				</ul>
 			</div>

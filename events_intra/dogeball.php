@@ -45,8 +45,7 @@
 							<h2>Dates</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
+						<p><strong>1st February 2020</strong></p>
 						</div>
 					</section>
 
@@ -56,7 +55,7 @@
 							<h2>Venue</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Venue</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+							<p><strong>Ground</strong></p>
 
 						</div>
 					</section>
@@ -68,8 +67,10 @@
 					</header>
 					<div class="content">
 						<ul class="alt">
-							<li><h2>Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
-							<li><h2>Co-Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
+							<li><h2>Head:</h2><h3> Shweta Sawant <br><br>+91 8424802263</h3></li>
+							<li><h2>Co-Head:</h2><h3> Jimisha Surti <br><br>+91 9930713056</h3></li>
+							<li><h2>Co-Head:</h2><h3> Aleesha Jivani <br><br>-</h3></li>
+
 						</ul>
 					</div>
 				</section>

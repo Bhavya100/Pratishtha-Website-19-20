@@ -45,8 +45,7 @@
 							<h2>Dates</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
+						<p><strong>31 th January 2020</strong></p>
 						</div>
 					</section>
 
@@ -55,7 +54,7 @@
 							<h2>Venue</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Venue</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+							<p><strong>Ground</strong></p>
 
 						</div>
 					</section>
@@ -67,8 +66,9 @@
 					</header>
 					<div class="content">
 						<ul class="alt">
-							<li><h2>Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
-							<li><h2>Co-Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
+							<li><h2>Head:</h2><h3> Harsh Panchal <br><br>+91 9920443985</h3></li>
+							<li><h2>Head:</h2><h3> Aakash Bhatt <br><br>+91 9619601191</h3></li>
+							<li><h2>Co-Head:</h2><h3> Meet Shah <br><br>+91 8169305673</h3></li>
 						</ul>
 					</div>
 				</section>

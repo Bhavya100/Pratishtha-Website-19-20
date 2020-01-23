@@ -45,8 +45,7 @@
 							<h2>Dates</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Dates</strong> ilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
+						<p><strong>1st February 2020</strong></p>
 						</div>
 					</section>
 
@@ -56,7 +55,7 @@
 							<h2>Venue</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Venue</strong> ilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+							<p><strong>Ground</strong></p>
 
 						</div>
 				</section>
@@ -68,8 +67,11 @@
 					</header>
 					<div class="content">
 						<ul class="alt">
-							<li><h2>Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
-							<li><h2>Co-Head:</h2><h3> Name <br><br>+91 23789090</h3></li>
+							<li><h2>Head:</h2><h3> Aashay Korani <br><br>+91 9619709529</h3></li>
+							<li><h2>Head:</h2><h3> Aayush Ladda <br><br>+91 9834791050</h3></li>
+							<li><h2>Co-Head:</h2><h3> Siddhant Zaveri <br><br>+91 7678060767</h3></li>
+							<li><h2>Co-Head:</h2><h3> Meet Mota  <br><br>+91 9167243131</h3></li>
+
 						</ul>
 					</div>
 				</section>

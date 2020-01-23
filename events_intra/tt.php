@@ -47,8 +47,7 @@
                 <h2>Dates</h2>
             </header>
             <div class="content">
-                <p><strong>Sample Dates</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
-
+            <p><strong>31 th January 2020</strong></p>
             </div>
         </section>
 
@@ -58,7 +57,7 @@
                 <h2>Venue</h2>
             </header>
             <div class="content">
-                <p><strong>Sample Venue</strong> sit amet consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceped et lorem adipiscing.</p>
+                <p><strong>Gymkhana</strong></p>
 
             </div>
         </section>
@@ -72,11 +71,11 @@
                 <ul class="alt">
                     <li>
                         <h2>Head:</h2>
-                        <h3> Name <br><br>+91 23789090</h3>
+                        <h3> Jash Jain <br><br>+91 9765100077</h3>
                     </li>
                     <li>
                         <h2>Co-Head:</h2>
-                        <h3> Name <br><br>+91 23789090</h3>
+                        <h3> Mohit Naik <br><br>+91 9769712185</h3>
                     </li>
                 </ul>
             </div>
