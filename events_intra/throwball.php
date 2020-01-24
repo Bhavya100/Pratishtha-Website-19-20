@@ -123,7 +123,27 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>Eligibility for Participation: ● All players of a team should be currently registered and studying in the same year and department of the college</br></br>
+ ● Mixing of different departments and teams is not allowed </br></br>
+● All players must carry valid college ID-Card with them. </br></br>
+● A player should not be in her drop year </br></br>
+● In-case of protest, the decision of the heads shall be considered final General Regulations: </br></br>
+ ● Unsportsmanlike conduct may lead to disqualification </br></br>
+Playing Rules: </br></br>
+● A maximum total of 5 players + 2 substitutes can be included in the team roster </br></br>
+● A minimum of 3 players are required in the court </br></br>
+● All matches will be sets of 3 </br></br>
+● The ball is to be caught with both hands and returned with one hand </br></br>
+● Double touch is not allowed </br></br>
+● Service ball should not touch the net </br></br>
+● During the rally, the ball can touch the net </br></br>
+● Serve the ball from the service zone without crossing the service line </br></br>
+● Body touch, during catching or releasing the ball is not allowed except for the palm. </br></br>
+● Shifting the ball from right to left or left to right is not permitted </br></br>
+● Centre catch is not allowed </br></br>
+● Rotation is optional </br></br>
+● The referee's decision is final. </br></br>
+</strong> </p>
 
 
 

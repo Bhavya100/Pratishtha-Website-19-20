@@ -160,7 +160,20 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>•	All matches will be played according to the respective University level  basketball rules.</br></br>
+•	Teams should be present atleast 30 minutes before your match. </br></br>
+•	All teams are required to give complete list of team members with the valid  ORIGINAL college ID cards and no dropouts are allowed, in any circumstance the team will be disqualified. </br></br>
+•	The Referee’s decision  will be a final call in any dispute. </br></br>
+•	The draws will be out on the match day itself. </br></br>
+Basketball </br></br>
+(5v5):- BOYS</br></br>
+•	Minimum 5 players and maximum 12 players</br></br>
+•	Four quarters of 8 minutes each (Subjected to any changes) </br></br>
+3v3:- GIRLS</br></br>
+•	Minimum 3 players and maximum 5 (3+2). </br></br>
+•	Two halves of 6 minutes each. </br></br>
+•	Team to score 21 points or have the maximum points at the end of the game would be    winner.
+</strong></p>
 
 
 

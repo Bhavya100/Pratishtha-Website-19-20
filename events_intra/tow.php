@@ -163,7 +163,14 @@
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>1. If the team does not report within 15 minutes of given time then the opposite team will qualify by default. </br></br>
+2. 10 players per team. </br></br>
+3. The total weight of the team should not be more than 750kg. </br></br>
+4. Match sequence will be based on draws. </br></br>
+5. First team to win 2 out of 3 rounds wins. </br></br>
+6. The losing team will be knocked out. </br></br>
+7. The referee’s decision will be final. </br></br>
+</strong></p>
 
 
 

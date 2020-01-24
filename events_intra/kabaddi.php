@@ -124,7 +124,26 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>General regulations</br></br>
+•	Smoking or consumption of Alcohol in the camps is strictly prohibited. The whole team would be disqualified, If any single player is found violating these rules.</br></br>
+•	A list of 10-12 players should be given to the organizing team two days prior to the start of the tournament. With seven playing and 3-5 substitutes. </br></br>
+•	No valuables and other accessories are not allowed (except sports apparel) during gameplay. </br></br>
+•	The match will be of two halves rah containing of 20 minutes. </br></br>
+•	Each team can request a maximum of 2 time outs and 5 substitutions per match. </br></br>
+Basic violations</br></br>
+•	Persistently protesting or objecting the officials decision , thereby disrupting the match. </br></br>
+•	Making derogatory remarks about officials and their actions and thereby trying to influence the decision. </br></br>
+•	Showing over aggression towards referee or umpire demanding a favorable decision</br></br>
+•	Stifling the raider but shutting his mouth or throat in any way. </br></br>
+•	Violent tracking leading to injuries being sustained by the opponent raider. </br></br>
+•	Taking more than 5 seconds to stay the raid unless specified in the rules. </br></br>
+•	Holding the raider with help of scissors operated by the legs. </br></br>
+•	Coaching from outside by the coach or the players. </br></br>
+•	Preventing the raider to take his turn of raid. </br></br>
+Rescheduling and Walkover</br></br>
+Rescheduling will depend solely on the event heads will have the power to give a Walkover to the team if the opposite team does not turns up in 15-20 minutes after the scheduled time. </br></br>
+The power of giving walkover lies solely on event heads.
+</strong></p>
 
 
 

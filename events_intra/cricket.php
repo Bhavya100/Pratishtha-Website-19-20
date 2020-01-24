@@ -155,7 +155,19 @@
 				<h2>Rules</h2>
 			</header>
 			<div class="content">
-				<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+				<p><strong>• 11 players in playing team with squad of 15 players.</br></br>
+• Team should report before 15 mins of the match . </br></br>
+• Each player in the team should bring their yellow ID card or can’t play the match without yellow ID. </br></br>
+• Each inning of match will be of 4 overs . </br></br>
+• First over of the innings will be a powerplay . </br></br>
+• Bowler can ball only 1 over maximum . </br></br>
+• Bowler should have a clean action if he throw a ball it will be considered as a no ball . </br></br>
+• If the match gets draw then a super over will be played </br></br>
+• Umpire decision will be final decision. </br></br>
+• If any team argues with umpire or any coordinator team will get disqualified </br></br>
+• Any team loses it be directly get knocked out . </br></br>
+• Rest of the rules will be told on the match day
+</strong></p>
 
 
 

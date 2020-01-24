@@ -167,7 +167,11 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>1)  In all races run in lanes, each competitor shall keep within his/her allocated lane from start to finish.</br></br>
+2)  If a competitor is pushed or forced by another person to run outside his/her lane, and if no material advantage is gained, the competitor should not be disqualified.</br></br>
+3)  If an athlete either runs outside his/her lane in the straight or runs outside the outer lane on the bend, with no material advantage thereby being gained, and if no other runner is obstructed, then the competitor shall not be disqualified.</br></br>
+4) Shoes are Compulsory.
+</strong></p>
 
 
 

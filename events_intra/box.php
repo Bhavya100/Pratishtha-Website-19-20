@@ -127,7 +127,20 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>●	Match will be played with 6 players a side decided and named before the toss. </br></br>
+●	Each team will bowl 4 overs and bat 4 overs. </br></br>
+●	One player is allowed to bowl for two over but those overs should be alternate and not continuous. </br></br>
+●	One substitute is allowed per team. </br></br>
+●	Substitute can only play if a player in injured, decision will be made by the umpire. </br></br>
+●	The non-striker will have to stay fully within the crease until the ball is delivered, a penalty run of -1 will be awarded to the batting team every time a non-striker steps out. </br></br>
+●	Umpires  decision will be final. </br></br>
+●	In case of a tie ,team will bowl and bat a super over to decide a winner. </br></br>
+●	There will be a box within which the cricket will be played, with a rectangle area behind the bowler along the boundary at the far end where 4 runs are scored. </br></br>
+●	One player from the bowling team must keep the wicket while bowling. </br></br>
+●	Balling should be underarm. </br></br>
+●	If the team is not on time then the respective team will be disqualified.(no excuses will be entertained) </br></br>
+●	Multiple games may be played on same day depending upon team and field availability.
+</strong></p>
 
 
 

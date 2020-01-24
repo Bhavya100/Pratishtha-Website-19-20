@@ -124,7 +124,28 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>General Regulations: </br></br>
+ a. Smoking/consumption of alcohol or any prohibited substances inside the campus is strictly prohibited. The entire team will be disqualified from the tournament even if a single player is found to be violating these rules </br></br>
+b. A list of 10 players should be given to the organizing team two days prior to the start of the tournament. With 6 playing (In 6 players) and substitutes including one libero if needed. </br></br>
+c. fouls involving unsportsmanlike conduct will lead to player/team disqualification as per the officials’ decision </br></br>
+d. No valuables, accessories (other than sports non-apparel) will be allowed during gameplay. </br></br>
+e. It’s mandatory for every participant of every team to carry an institute ID card and a national ID card for verification </br></br>
+f. All matches will be of 3 sets </br></br>
+g. If two or more faults are committed successively only the first one is considered </br></br>
+h. If faults are committed by both the teams simultaneously then the point becomes void i.e., it is a commonpoint </br></br>
+i. Each team can request a maximum of 2 time-outs and 6 substitutions per set. </br></br>
+j. There must be a completed rally between two separate substitution requests by the same team </br></br>
+
+ Basic violations: </br></br>
+a. Stepping on or over the line on a serve </br></br>
+b. Failure to serve the ball over the net successfully </br></br>
+c. Hitting the ball illegally (Carrying, Palming, Throwing, etc.) </br></br>
+d. Touches of the net with any part of the body while the ball is in play. If the ball is driven into the net with such force that it causes the net to contact an opposing player, no foul will be called, and the ball shall continue to be in play </br></br>
+e. Reaching over the net, except under these conditions: i. When executing a follow-through ii. When blocking a ball which is in the opponent's’ court but is being returned (the blocker must not contact the ball until after the opponent who is attempting to return the ball makes contact, Except to block the third play </br></br>
+f. Reaches under the net (if it interferes with the ball or opposing player) </br></br>
+ g. Failure to serve in the correct order </br></br>
+h. Rescheduling and Walkover: Rescheduling will depend solely on the event heads and the event heads will have the power to give a walkover to a team if the opposite team does not turn up in 15-20 minutes after the scheduled time. The power of giving walkover lies solely on the event heads</br></br>
+</strong></p>
 
 
 

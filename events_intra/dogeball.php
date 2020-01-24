@@ -124,7 +124,14 @@ while($row=mysqli_fetch_array($r))
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>1. Match will be of total 14 minutes .7 minutes per team.</br></br>
+2. The objective of dodgeball is to eliminate all players of the opposing team by       hitting the opposing player below the waist. </br></br>
+3.NO mix players in a team will be entertained. </br></br>
+4. Participants must report 30 minutes before the reporting time , or else the opposite team will be given a bye. </br></br>
+5. Referee’s decision will be the final decision. </br></br>
+ 6.Carry your smart cards and ID cards. </br></br>
+7. NO dropouts students can participate.
+</strong></p>
 
 
 

@@ -163,7 +163,15 @@
 							<h2>Rules</h2>
 						</header>
 						<div class="content">
-							<p><strong>Sample Rules</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>1)If a team doesn’t report within 15 mins from given time the opposite team will be given a walkover. </br></br>
+2)Minimum 3 and Maximum 5 players. </br></br>
+ 3)The match sequence will be singles doubles singles. </br></br>
+4)First team to score 11points will win the set. </br></br>
+5)If any team loses then it will be knocked out. </br></br>
+6)If any team wins first two matches then it will advance to the next round. </br></br>
+7)If team sets core is 1-1 then the third singles will be played. </br></br>
+8)Referee's decision will be final.
+</strong></p>
 
 
 
