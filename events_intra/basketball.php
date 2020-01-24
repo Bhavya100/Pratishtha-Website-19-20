@@ -73,13 +73,13 @@
 					</div>
 				</section>
 
-					
 
-					
+
+
 					<!-- Section -->
 					<section>
 							<header>
-								<h2>Points Table</h2>
+								<h2>Points Table Boys</h2>
 							</header>
 							<div class="content">
 
@@ -96,7 +96,7 @@
 											<tr>
 												<?php
 												include '../admin/includes/connect.php';
-$q="select b.class,b.basketball+g.basketball as t from olympus_points_b b,olympus_points_g g where b.class=g.class order by t DESC";
+$q="select b.class,b.basketball as t from olympus_points_b b,olympus_points_g g where b.class=g.class order by t DESC";
 $r=mysqli_query($conn,$q);
 while($row=mysqli_fetch_array($r))
 {
@@ -115,8 +115,45 @@ while($row=mysqli_fetch_array($r))
 
 							</div>
 						</section>
+						<section>
+								<header>
+									<h2>Points Table Girls</h2>
+								</header>
+								<div class="content">
 
-				
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th><strong>Team</strong></th>
+
+													<th><strong>Points</strong></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<?php
+													include '../admin/includes/connect.php';
+						$q="select b.class,g.basketball as t from olympus_points_b b,olympus_points_g g where b.class=g.class order by t DESC";
+						$r=mysqli_query($conn,$q);
+						while($row=mysqli_fetch_array($r))
+						{
+													 ?>
+													<td><?php echo $row['class']; ?></td>
+													<td><?php echo $row['t'] ?></td>
+												</tr>
+						<?php } ?>
+
+
+											</tbody>
+
+										</table>
+									</div>
+
+
+								</div>
+							</section>
+
 				<!-- Section -->
 				<section>
 						<header>
@@ -129,15 +166,15 @@ while($row=mysqli_fetch_array($r))
 
 						</div>
 					</section>
-				
-
-				
 
 
 
 
 
-				
+
+
+
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
