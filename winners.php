@@ -1,3 +1,48 @@
+<?php
+include "admin/includes/connect.php";
+$sql="select * from olympus_winners where sports='cricket'";
+$res=mysqli_query($conn,$sql);
+$row=mysqli_fetch_array($res);
+$sql1="select * from olympus_winners where sports='football'";
+$res1=mysqli_query($conn,$sql1);
+$row1=mysqli_fetch_array($res1);
+$sql2="select * from olympus_winners where sports='basket_ball'";
+$res2=mysqli_query($conn,$sql2);
+$row2=mysqli_fetch_array($res2);
+$sql3="select * from olympus_winners where sports='volleyball'";
+$res3=mysqli_query($conn,$sql3);
+$row3=mysqli_fetch_array($res3);
+$sql4="select * from olympus_winners where sports='throw_ball'";
+$res4=mysqli_query($conn,$sql4);
+$row4=mysqli_fetch_array($res4);
+$sql5="select * from olympus_winners where sports='dodge_ball'";
+$res5=mysqli_query($conn,$sql5);
+$row5=mysqli_fetch_array($res5);
+$sql6="select * from olympus_winners where sports='kabaddi'";
+$res6=mysqli_query($conn,$sql6);
+$row6=mysqli_fetch_array($res6);
+$sql7="select * from olympus_winners where sports='tabletennis'";
+$res7=mysqli_query($conn,$sql7);
+$row7=mysqli_fetch_array($res7);
+$sql8="select * from olympus_winners where sports='badminton'";
+$res8=mysqli_query($conn,$sql8);
+$row8=mysqli_fetch_array($res8);
+$sql9="select * from olympus_winners where sports='box_cricket'";
+$res9=mysqli_query($conn,$sql9);
+$row9=mysqli_fetch_array($res9);
+$sql0="select * from olympus_winners where sports='tug_of_war'";
+$res0=mysqli_query($conn,$sql0);
+$row0=mysqli_fetch_array($res0);
+$sql11="select * from olympus_winners where sports='chess'";
+$res11=mysqli_query($conn,$sql11);
+$row11=mysqli_fetch_array($res11);
+$sql12="select * from olympus_winners where sports='carrom'";
+$res12=mysqli_query($conn,$sql12);
+$row12=mysqli_fetch_array($res12);
+$sql13="select * from olympus_winners where sports='athletics'";
+$res13=mysqli_query($conn,$sql13);
+$row13=mysqli_fetch_array($res13);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +84,7 @@
     background-color: #3e64ff;
    }
    .nav-pills .nav-link {
-      
+
       padding: 1rem;
       width: 15rem;
     }</style>
@@ -190,7 +235,7 @@
               <div class="text pl-3">
                 <span class="date">30th January 2020</span>
                 <h2>Winner</h2>
-                <span class="position">SE-Comps</span>
+                <span class="position"><?php echo $row['winner_boys']; ?></span>
                 <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
@@ -201,7 +246,7 @@
               <div class="text pl-3">
                 <span class="date">31th January 2020</span>
                 <h2>Runner-up</h2>
-                <span class="position">TE-Comps</span>
+                <span class="position"><?php echo $row['runnerup_boys']; ?></span>
               </div>
             </div>
           </div>
@@ -215,7 +260,7 @@
               <div class="text pl-3">
                 <span class="date">30th January 2020</span>
                 <h2>Winner</h2>
-                <span class="position">SE-Comps</span>
+                <span class="position"><?php echo $row1['winner_boys']; ?></span>
                 <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
@@ -226,23 +271,22 @@
               <div class="text pl-3">
                 <span class="date">31th January 2020</span>
                 <h2>Runner-up</h2>
-                <span class="position">TE-Comps</span>
+                <span class="position"><?php echo $row1['runnerup_boys']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-3" class="page three">
-            <h2 class="heading" style="color: black;">Basketball</h2>
+            <h2 class="heading" style="color: black;">Basketball(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Software Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row2['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -250,11 +294,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Web Designer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row2['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Basketball(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row2['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -262,47 +316,9 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Web Marketing</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Side Tech</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Wordpress Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2017-2018</span>
-                <h2>UI/UX Designer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row2['winner_girls']; ?></span>
               </div>
             </div>
           </div>
@@ -314,11 +330,10 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row3['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -326,35 +341,9 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row3['runnerup_boys']; ?></span>
               </div>
             </div>
           </div>
@@ -366,11 +355,10 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row4['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -378,35 +366,9 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row4['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
@@ -418,11 +380,10 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row5['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -430,35 +391,9 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row5['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
@@ -470,11 +405,10 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row6['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -482,51 +416,24 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row6['runnerup_boys']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-8" class="page eight">
-            <h2 class="heading" style="color: black;">Table Tennis</h2>
+            <h2 class="heading" style="color: black;">Table Tennis(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row7['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -534,11 +441,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row7['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Table Tennis(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row7['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -546,39 +463,24 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row7['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-9" class="page nine">
-            <h2 class="heading" style="color: black;">Badminton</h2>
+            <h2 class="heading" style="color: black;">Badminton(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row8['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -586,11 +488,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row8['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Badminton(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row8['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -598,23 +510,9 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row8['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
@@ -626,11 +524,10 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row9['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -638,51 +535,24 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row9['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-11" class="page eleven">
-            <h2 class="heading" style="color: black;">Tug-of-War</h2>
+            <h2 class="heading" style="color: black;">Tug-of-War(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row0['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -690,11 +560,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row0['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Tug-of-War(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row0['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -702,39 +582,24 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row0['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-12" class="page twelve">
-            <h2 class="heading" style="color: black;">Chess</h2>
+            <h2 class="heading" style="color: black;">Chess(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row11['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -742,11 +607,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row11['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Chess(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row11['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -754,39 +629,24 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row11['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-13" class="page thirteen">
-            <h2 class="heading" style="color: black;">Carrom</h2>
+            <h2 class="heading" style="color: black;">Carrom(Boys)</h2>
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row12['winner_boys']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -794,11 +654,21 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row12['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Carrom(Girls)</h2>
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row12['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -806,39 +676,25 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row12['runnerup_girls']; ?></span>
               </div>
             </div>
           </div>
 
           <div id="page-14" class="page fourteen">
-            <h2 class="heading" style="color: black;">Athletics</h2>
+            <h2 class="heading" style="color: black;">Athletics(Boys)</h2>
+
             <div class="resume-wrap d-flex ftco-animate">
               <div class="icon d-flex align-items-center justify-content-center">
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 10 Web Developer</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row13['winner_boys']; ?>s</span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -846,11 +702,22 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 5 LeaderShip Exellence Winner</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row13['runnerup_boys']; ?></span>
+              </div>
+            </div>
+            <h2 class="heading" style="color: black;">Athletics(Girls)</h2>
+
+            <div class="resume-wrap d-flex ftco-animate">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i class="fas fa-medal" style="color: white;"></i>
+              </div>
+              <div class="text pl-3">
+                <span class="date">30th January 2020</span>
+                <h2>Winner</h2>
+                <span class="position"><?php echo $row13['winner_girls']; ?></span>
+                <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> -->
               </div>
             </div>
             <div class="resume-wrap d-flex ftco-animate">
@@ -858,24 +725,11 @@
                 <i class="fas fa-medal" style="color: white;"></i>
               </div>
               <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Top 4 Web Tester</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="date">31th January 2020</span>
+                <h2>Runner-up</h2>
+                <span class="position"><?php echo $row13['runnerup_girls']; ?></span>
               </div>
             </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <i class="fas fa-medal" style="color: white;"></i>
-              </div>
-              <div class="text pl-3">
-                <span class="date">2014-2015</span>
-                <h2>Art &amp; Creative Director</h2>
-                <span class="position">Cambridge University</span>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                  paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              </div>
             </div>
           </div>
         </div>
