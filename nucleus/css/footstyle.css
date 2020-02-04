@@ -1,0 +1,259 @@
+/* .navbar-sticky.affix {
+  top: 0px;
+  width: 100%;
+}
+.navbar-sticky.affix + * {
+  margin-top: 10px;
+}
+.navbar-brand {
+  height: 80px;
+  padding-left: -20px;
+}
+.navbar-custom{
+  background-color: red;
+  border-color: transparent;
+}
+ .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+} */
+.leader{
+  padding-top: 100px;
+}
+.logo{
+ font-family: 'Rubik';
+ font-size: 25px;
+ color: white;
+ font-style: normal;
+ margin-top: 23px;
+}
+.navbar-caption-wrap {
+    display: -webkit-flex;
+}
+.nav-cap{
+font-size: 25px;
+color: white;
+}
+.padfew{
+  padding-top: 10px;
+  padding-bottom: 200px;
+}
+.align-center {
+  text-align: center;
+}
+.text-white {
+  color: #ffffff !important;
+}
+a.text-white:hover,
+a.text-white:focus {
+  color: #b3b3b3 !important;
+}
+h1.ind{
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  padding-top: 180px;
+}
+p.inde{
+  color: #b3b3b3;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+}
+.es-section-btn a.btn:not(.btn-form) {
+  border-radius: 100px;
+}
+.es-section-btn a.btn:not(.btn-form):hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.bt{
+  font-weight: 500;
+  border-width: 2px;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: .4rem .8rem;
+  white-space: normal;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word;
+}
+.btn-md {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: .4rem .8rem !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 3rem;
+  border-radius: 3;
+}
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #ff3366;
+  border-color: #ff3366;
+  color: #ffffff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary.focus {
+  color: #ffffff;
+  background-color: #e50039;
+  border-color: #e50039;
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+  color: #ffffff !important;
+  background-color: #e50039 !important;
+  border-color: #e50039 !important;
+}
+.btn-white-outline,
+.btn-white-outline:active,
+.btn-white-outline.active {
+  background: none;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-white-outline:hover,
+.btn-white-outline:focus,
+.btn-white-outline.focus {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.ff3es {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2e2e2e;
+}
+.es-text{
+  color: #d7d7d7;
+}
+ /*
+}
+If using bootstrap with scss you can use the variables as well */
+/*
+#navbar-main {
+  &.affix {
+    top: 0px;
+    width: 100%;
+  }
+  &.affix + * {
+    margin-top: ($navbar-height + $navbar-margin-bottom);
+  }
+}
+*/
+@media (max-width: 767px) {
+  .ff3es .content {
+    text-align: center;
+  }
+  .ff3es .content > div:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .ff3es .media-wrap {
+    margin-bottom: 1rem;
+  }
+}
+.ff3es .media-wrap .mbr-iconfont-logo {
+  font-size: 7.5rem;
+  color: #f36;
+}
+.ff3es .media-wrap img {
+  height: 6rem;
+}
+@media (max-width: 767px) {
+  .ff3es .footer-lower .copyright {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+.ff3es .footer-lower hr {
+  margin: 1rem 0;
+  border-color: #fff;
+  opacity: .05;
+}
+.ff3es .footer-lower .social-list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+.ff3es .footer-lower .social-list .mbr-iconfont-social {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.ff3es .footer-lower .social-list .soc-item {
+  margin: 0 .5rem;
+  font-size: 3rem;
+}
+.ff3es .footer-lower .social-list a {
+  margin: 0;
+  opacity: .5;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+.ff3es .footer-lower .social-list a:hover {
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .ff3es .footer-lower .social-list {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navbar-sticky.affix {
+  opacity: 0;
+
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .4s;
+  -moz-animation-duration: .4s;
+  animation-duration: .4s;
+  background-color: #2f2f2f;
+  background: #2f2f2f;
+  border-color: transparent;
+  box-shadow: none;
+}

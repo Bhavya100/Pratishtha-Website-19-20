@@ -1,0 +1,150 @@
+    .welcome-container {
+      height: 100%;
+      position: relative;
+      background-color: #000;
+    }
+
+    .z-depth-2{
+      box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    }
+
+    .hoverable{
+      transition: box-shadow 0.25s;
+    }
+
+    .hoverable:hover{
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+    .olympus_events{
+      padding: 50px;
+    }
+
+    .olympus_events .row{
+      display: inline;
+      text-align: center;
+    }
+
+    .o_event{
+      width: 350px;
+      margin: 20px;
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+
+    .o_event_title{
+      font-size: x-large;
+      font-weight: 600;
+      font-family: sans-serif;
+    } 
+
+    .o_event_grp_name{
+      text-align: center;
+      margin-top: 20px;
+      width: 100%;
+      margin-bottom: -5px;
+    }
+
+    hr{
+      width: 100%;
+    }
+
+    .o_event_img{
+      width: 100%;
+    }
+
+    .o_event_date{
+      width: 100%;
+      margin-bottom: -1px;
+      border-radius: 0.25rem;
+      padding: 8px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .red-accent-1{
+      background: #ff8a80 !important;
+    }
+
+    .light-green-lighten-3{
+      background: #c5e1a5 !important;
+    }
+
+    .blue-lighten-3{
+      background: #81d4fa !important;
+    }
+
+    .purple-lighten-3{
+      background: #ce93d8 !important;
+    }
+
+    .cyan-lighten-3{
+      background: #80deea !important;
+    }
+
+    .amber-lighten-3{
+      background: #ffe082 !important;
+    }
+
+    .grey-lighten-3{
+      background: #eeeeee !important;
+    }
+
+    .pink-lighten-3{
+      background: #f48fb1 !important;
+    }
+
+    .indigo-lighten-3{
+      background: #9fa8da !important;
+    }
+
+    .event_modal_content{
+      text-align: center;
+      font-weight: 600;
+      font-family: cursive;
+      font-size: medium;
+    }
+
+    .emc_pratishtha{
+      font-size: xx-large;
+    }
+
+    .emc_clg{
+      font-size: large;
+      font-style: italic;
+
+    }
+
+    .emc_head_name{
+      font-size: x-large;
+      font-style: italic;
+    }
+
+    .emc_event_name{
+      font-size: larger;
+      font-style: italic;
+    }
+
+    .emc_bold_text{
+      font-size: large;
+      font-style: italic;
+    }
+
+    .event_modal_footer{
+      text-align: center;
+      justify-content: center;
+      font-weight: 600;
+      font-family: cursive;
+      font-size: large;
+    }
+
+    /*khali ek inline nikalne ke liye yeh likhna pad raha hai lol...*/
+    @media (max-width: 575px){
+      .olympus_events .row{
+        display: flex;
+      }
+
+      .o_event{
+        width: unset !important;
+      }
+    }
