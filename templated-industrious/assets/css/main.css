@@ -6,6 +6,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 /* Basic */
+
 @-ms-viewport {
   width: device-width; }
 body {
@@ -1813,7 +1814,7 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/sc.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2012,7 +2013,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    background: linear-gradient(135deg, black 0%, #111111 74%);
     content: ' ';
     display: block;
     height: 100vh;
@@ -2063,7 +2064,7 @@ ul.icons {
   background-color: #ce1b28;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(rgba(51, 49, 49, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/sc.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2431,7 +2432,7 @@ body {
   width: 100%;
   z-index: 10001; }
   #header > .logo {
-    color: #ffffff;
+    color: #e2212f;
     font-size: 1rem;
     font-weight: 600;
     height: inherit;
@@ -2822,3 +2823,98 @@ body.is-menu-visible #menu {
   transform: translateX(0);
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
   visibility: visible; }
+
+  /* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+  
+}
+
+.text:nth-child(5n + 1) {
+  stroke: red;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #c81912;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #f64b3c;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #f0134d;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #fa163f;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+/* Other styles */
+
+
+#banner2 {
+  background: #050505;
+  background-size: .2em 100%;
+  font: 23.5em Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fadeIn {
+
+    animation-duration: 7s;
+
+    
+  
+}
+
+.verve {
+  margin-top: -100px;
+  font-size: 13rem;
+  font-family: 'Lato', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+  color: #c81912 !important;
+}
+
+
+@media (max-width: 1200px) {
+  .verve {
+    font-size: calc(5.525rem + 6.3vw);
+  }
+}
