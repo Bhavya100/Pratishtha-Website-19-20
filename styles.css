@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+    font-size: 4rem;
+    color: orange;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    min-height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover:hover {
+    cursor : url(https://res.cloudinary.com/maggiecodes/image/upload/v1533490443/frenchyCursor.png), auto;
+
+}
