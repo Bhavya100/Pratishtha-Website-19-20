@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#background {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    height: 800px;
+		    width: 100%;
+		    background: transparent;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    overflow: hidden;
+		    z-index: 1;
+		}
+		.star {
+		    position: absolute;
+		    top: 300px;
+		    left: 400px;
+		    width: 10px;
+		    height: 10px;
+		    border-radius: 50%;
+		    background: rgba(255,255,255,0.75);
+		    box-shadow: 0px 0px 10px rgba(255,255,255,0.75);
+		}
+	</style>
+</head>
+<body style="background-color: #000">
+    <div id="background">
+        <div class="star" data-parallaxify-range="300"></div>
+    </div>
+    
+ 
+<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+    $(document).ready(function() {
+        var i,
+            size,
+            color,
+            width = $(window).width(),
+            height = $(window).height();
+        
+        for (i = 1; i <= 150; i++) {
+            size = Math.ceil(3*Math.random());
+            $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(100*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+        }
+        
+        for (i = 1; i <= 30; i++) {
+            size = Math.ceil(5*Math.random()) + 2;
+            $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(400*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px;"></div>');
+        }
+        
+        for (i = 1; i <= 15; i++) {
+            size = Math.ceil(5*Math.random()) + 5;
+            color = 'rgba(' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + Math.round(256*Math.random()) + ', ' + (Math.round(100*Math.random())/100) + ')';
+            $('#background').append('<div class="star" data-parallaxify-range="' + Math.round(600*Math.random()) + '" style="top: ' + Math.round(height*Math.random()) + 'px; left: ' + Math.round(width*Math.random()) + 'px; width: ' + size + 'px; height: ' + size + 'px; background: ' + color + '; box-shadow: 0px 0px 10px ' + color + ';"></div>');
+        }
+        
+        $.parallaxify({
+            positionProperty: 'transform',
+            responsive: true,
+            motionType: 'natural',
+            mouseMotionType: 'gaussian',
+            motionAngleX: 80,
+            motionAngleY: 80,
+            alphaFilter: 0.5,
+            adjustBasePosition: true,
+            alphaPosition: 0.025,
+        });
+ 
+        $('#foreground').click(function() {
+            $('#info').animate({ marginLeft: "-150px" }, 700);
+        });
+    });
+}); // */
+</script>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-41915731-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+</script>
+</body>
+</html>
