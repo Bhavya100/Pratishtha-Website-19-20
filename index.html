@@ -64,7 +64,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     color: red;
   }
   .slider-item:before {
-    opacity: 0.3;
+    opacity: 0.7;
   }
   .section {
     padding: 0 ;
@@ -91,7 +91,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <header role="banner">
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand " href="index.html"><img src="pratishtha logo.png"></a>
+        <a class="navbar-brand " href="index.html"><img src="pratishtha logo.png" width="50" height="50" class="d-inline-block align-top"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +100,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
    
         <div class="collapse navbar-collapse" id="navbarsExample05">
+          
           <ul class="navbar-nav pl-md-5 ml-auto">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
@@ -122,7 +123,10 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             </li>
            
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Trust Board</a>
+              <!-- <a class="nav-link" href="contact.html">Trust Board</a> -->
+
+            
+            <a href="#myModal" role="button" class="nav-link" data-toggle="modal">Trust Board</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Events  Calender</a>
@@ -138,10 +142,26 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
       </div>
     </nav>
   </header>
+  <div class="modal fade show" id="myModal" role="dialog">
+    <div class="modal-dialog 	modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                      
+                      <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="dynamic-content">
+                    <img src="images/trust-board.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+       </div>
+</div> 
   <!-- END header -->
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
-    style="background-image: url('images/sc.jpg');
+    style="background-image: url('images/hero_2.jpg');
             ">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
@@ -231,57 +251,68 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
           </div>
           <div class="row">
             
-            <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
-              <div class="service">
-                <img class="img-thumbnail" src="images/OUR PARTNERS.png" />
-  
-              </div>
-            </div>
+            
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="100">
               <div class="service">
                 <img class="img-thumbnail" src="images/Brew House.png" />
-      
+                <h3>ice tea partner</h3>
               </div>
             </div>
         
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="200">
               <div class="service">
-                <img class="img-thumbnail" src="images/Brew House.png" />           
+                <h1>Champak paints</h1> 
+                <h3>paints partner</h3>         
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
-              <div class="service">
-                <img class="img-thumbnail" src="images/Colors Infinity.png" />         
-              </div>
-            </div>
+
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="100">
               <div class="service">
-                <img class="img-thumbnail" src="images/Frapp.png" />         
+                <img class="img-thumbnail" src="images/Frapp.png" />
+                <h3>student partner</h3>         
               </div>
             </div>
+
+            
+
+            <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
+              <div class="service">
+<h1>Shunya</h1>
+                <h3>beverage partner</h3>       
+              </div>
+            </div>
+            
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="200">
               <div class="service">
-                <img class="img-thumbnail" src="images/GrabOn.png" />                
+                <img class="img-thumbnail" src="images/GrabOn.png" />  
+                <h3>online savings partner</h3>              
               </div>
             </div>
             
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
               <div class="service">
-                <img class="img-thumbnail" src="images/Kaizo Logo.png" style="background-color: black;"/>                
+<h1>Paras</h1>                <h3>official thermoware partner</h3>               
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="100">
               <div class="service">
-                <img class="img-thumbnail" src="images/Technobotics.png" />              
+                <img class="img-thumbnail" src="images/vog.jpg" />     
+                <h3>gujarati newspaper partner</h3>         
               </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="200">
               <div class="service">
-                <img class="img-thumbnail" src="images/Endeavor.png" />
+                <img class="img-thumbnail" src="images/IIDE.png" />
+                <h3>digital education partner</h3>
   
               </div>
             </div>
-              
+            <div class="col-lg-4 col-md-6 mb-5 text-center"  data-aos="fade-up" data-aos-delay="">
+              <div class="service">
+                <img class="img-thumbnail" src="images/radio-city.jpg" />
+                <h3>radio partner</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
