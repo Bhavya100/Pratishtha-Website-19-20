@@ -5,12 +5,17 @@
 
 <head>
   <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-53W3NRV');</script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158604009-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-158604009-1');
+  </script>
   <!-- End Google Tag Manager -->
+
   <title>Pratishtha - SAKEC Fest</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -310,15 +315,12 @@
 
 <body>
 
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53W3NRV"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- Navbar starts here -->
 
   <header role="banner">
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand " href="index.html"><img src="pratishtha logo.png"></a>
+        <a class="navbar-brand " href="index.html"><img src="pratishtha logo.png" width="50" height="50" class="d-inline-block align-top"></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
           aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -327,30 +329,36 @@
 
    
         <div class="collapse navbar-collapse" id="navbarsExample05">
+          
           <ul class="navbar-nav pl-md-5 ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Council</a>
+              <a class="nav-link" href="council/council.html">Council</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">Pratishtha</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
                 <a class="dropdown-item" href="nucleus/nucleus.html">Nucleus</a>
                 <a class="dropdown-item" href="olympus/olympus.html">Olympus</a>
                 <a class="dropdown-item" href="mun/mun.html">MUN</a>
-                <a class="dropdown-item" href="#">Verve</a>
+                <a class="dropdown-item" href="verve/index.html">Verve</a>
               </div>
             </li>
            
-            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target=".trustModal" >Trust Board</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="ecalendar.html">Events  Calender</a>
+              <!-- <a class="nav-link" href="contact.html">Trust Board</a> -->
+
+            
+            <a href="#myModal" role="button" class="nav-link" data-toggle="modal">Trust Board</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  active" href="ecalendar.html">Events  Calender</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact Us</a>
@@ -363,7 +371,23 @@
       </div>
     </nav>
   </header>
-  <!-- END header -->
+  <div class="modal fade show" id="myModal" role="dialog">
+    <div class="modal-dialog 	modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                      
+                      <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="dynamic-content">
+                    <img src="images/trust-board.png" class="img-fluid" alt=""/>
+                </div>
+            </div>
+       </div>
+</div> 
+  <!-- Navbar ends header -->
 
 
   <div class="slider-item overlay" data-stellar-background-ratio="0.5"
@@ -397,12 +421,49 @@
                 <div class="timeline-info"></div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
+                    <h2 class="timeline-title">Declaration of Student Council</h2>
+                </div>
+            </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>30<sup>th</sup> August 2019</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Declaration</h3>
+                        <p>Every college needs a group of stellar students to lead them on the path of success. Our student council is the perfect example for the same!</p>
+                    </div>
+                </li>
+
+                <li class="timeline-item period">
+                  <div class="timeline-info"></div>
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-content">
+                      <h2 class="timeline-title">Events</h2>
+                  </div>
+              </li>
+                  <li class="timeline-item">
+                      <div class="timeline-info">
+                          <span>16<sup>th</sup> September 2019</span>
+                      </div>
+                      <div class="timeline-marker"></div>
+                      <div class="timeline-content">
+                          <h3 class="timeline-title">Teacher's Day</h3>
+                          <p>On the occasion of teacher's day all our beloved teachers were gathered in the auditorium where we conducted some fun activities for them. The event was successfully carried out with our teachers happier than ever!</p>
+                      </div>
+                  </li>
+                
+                
+              <li class="timeline-item period">
+                <div class="timeline-info"></div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
                     <h2 class="timeline-title">Nucleus</h2>
                 </div>
             </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>9th October 2019</span>
+                        <span>9<sup>th</sup> October 2019</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -412,7 +473,7 @@
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>10th October 2019</span>
+                        <span>10<sup>th</sup> October 2019</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -422,7 +483,7 @@
                 </li>
                 <li class="timeline-item">
                   <div class="timeline-info">
-                      <span>11th October 2019</span>
+                      <span>11<sup>th</sup> October 2019</span>
                   </div>
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
@@ -439,7 +500,7 @@
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>30th January 2020</span>
+                        <span>30<sup>th</sup> January 2020</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -449,7 +510,7 @@
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>31st January 2020</span>
+                        <span>31<sup>st</sup> January 2020</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -459,13 +520,42 @@
                 </li>
                 <li class="timeline-item">
                   <div class="timeline-info">
-                      <span>1st February 2020</span>
+                      <span>1<sup>st</sup> February 2020</span>
                   </div>
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
                       <h3 class="timeline-title"> Day 3 - Intra</h3>
                       <p>Kabbadi , Tug-Of-War , Throwball , Dodgeball & Athletics</p>
                   </div>
+
+                  <li class="timeline-item period">
+                    <div class="timeline-info"></div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h2 class="timeline-title">MUN</h2>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>21<sup>st</sup> February 2020</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title"> MUN Day 1 </h3>
+                        <p>Cricket , Carrom , Badminton , Basketball & Chess</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-info">
+                        <span>22<sup>nd</sup> February 2020</span>
+                    </div>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title"> MUN Day 2 </h3>
+                        <p>Football , Volleyball , Box Cricket & Table Tennis</p>
+                    </div>
+                </li>
+
                   <li class="timeline-item period">
                     <div class="timeline-info"></div>
                     <div class="timeline-marker"></div>
@@ -475,7 +565,7 @@
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>17th February 2020</span>
+                        <span>17<sup>th</sup> February 2020</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -485,7 +575,7 @@
                 </li>
                 <li class="timeline-item">
                     <div class="timeline-info">
-                        <span>26th February 2020</span>
+                        <span>26<sup>th</sup> February 2020</span>
                     </div>
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -495,7 +585,7 @@
                 </li>
                 <li class="timeline-item">
                   <div class="timeline-info">
-                      <span>27st February 2020</span>
+                      <span>27<sup>th</sup> February 2020</span>
                   </div>
                   <div class="timeline-marker"></div>
                   <div class="timeline-content">
@@ -505,7 +595,7 @@
               </li>
               <li class="timeline-item">
                 <div class="timeline-info">
-                    <span>28th February 2020</span>
+                    <span>28<sup>th</sup> February 2020</span>
                 </div>
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
@@ -515,7 +605,7 @@
             </li>
             <li class="timeline-item">
               <div class="timeline-info">
-                  <span>29st February 2020</span>
+                  <span>29<sup>th</sup> February 2020</span>
               </div>
               <div class="timeline-marker"></div>
               <div class="timeline-content">
@@ -533,14 +623,34 @@
             </li>
             <li class="timeline-item">
               <div class="timeline-info">
-                  <span>1th October 2019</span>
+                  <span>23<sup>rd</sup> September 2019</span>
               </div>
               <div class="timeline-marker"></div>
               <div class="timeline-content">
-                  <h3 class="timeline-title"> Day 1 </h3>
-                  <p>Session on Further Studies By Imperial Overseas Education Consultants</p>
+                  <h3 class="timeline-title"> Inspirus Education </h3>
+                  <p>Session on Further Studies By Inspirus Education</p>
               </div>
           </li>
+          <li class="timeline-item">
+            <div class="timeline-info">
+                <span>27<sup>th</sup> September 2019</span>
+            </div>
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <h3 class="timeline-title"> Endeavour Careers </h3>
+                <p>Session on Further Studies By Endeavour Careers</p>
+            </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-info">
+              <span>1<sup>st</sup> October 2019</span>
+          </div>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+              <h3 class="timeline-title"> Imperial Overseas Education </h3>
+              <p>Session on Further Studies By Imperial Overseas Education Consultants</p>
+          </div>
+      </li>
             </ul>
         </div>
     </div>
@@ -566,6 +676,8 @@
   </div>
 </div>
 
+<!-- Footer starts here -->
+  
 
 <footer class="site-footer" role="contentinfo" style="padding: 2em; background-color:black; ">
   <div class="container">
@@ -579,6 +691,8 @@
     </div>
   </div>
 </footer>
+<!-- END footer -->
+
 
   <!-- loader -->
   <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
