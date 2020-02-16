@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Council</title>
+    <meta
+      name="description"
+      content="Grid Layout with Motion Hover Effect and Content Preview"
+    />
+    <meta
+      name="keywords"
+      content="grid, css, layout, template, hover, content, gsap, tweenmax, overlay"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function() {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="loading">
+    <svg class="hidden">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <title>arrow</title>
+        <polygon
+          points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "
+        />
+      </symbol>
+      <symbol id="icon-drop" viewBox="0 0 24 24">
+        <title>drop</title>
+        <path
+          d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"
+        />
+        <path
+          d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"
+        />
+      </symbol>
+      <svg id="icon-github" viewBox="0 0 33 33">
+        <title>github</title>
+        <path
+          d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"
+        ></path>
+      </svg>
+      <symbol id="icon-cross" viewBox="0 0 24 23">
+        <title>cross</title>
+        <path
+          d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z"
+        />
+      </symbol>
+    </svg>
+    <main>
+      <div class="content">
+        <header class="codrops-header">
+          <div class="codrops-links">
+            <a
+              class="codrops-icon codrops-icon--prev"
+              href="../index.html"
+              title="Previous Demo"
+              ><svg class="icon icon--arrow">
+                <use xlink:href="#icon-arrow"></use></svg
+            ></a>
+          </div>
+          <h1 class="codrops-header__title">
+            Back to home
+          </h1>
+        </header>
+      </div>
+      <div class="content">
+        <div class="grid">
+          <a class="grid__item" href="#preview-1">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src="council pics/nandu.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Meet">Meet</span>
+              </h3>
+
+              <p class="box__content">
+                President
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-2">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src="council pics/nishad.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Nishad">Nishad</span>
+              </h3>
+
+              <p class="box__content">
+                General Secretary
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-3">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src="council pics/purva.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Purva">Purva</span>
+              </h3>
+
+              <p class="box__content">
+                Ladies Representative
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-4">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src="council pics/forum.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Forum">Forum</span>
+              </h3>
+
+              <p class="box__content">
+                Ladies Representative
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-5">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/shikhar.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Shikhar"
+                  >Shikhar</span
+                >
+              </h3>
+
+              <p class="box__content">
+                Sports Representative
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-6">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/sharma.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Abhishek"
+                  >Abhishek</span
+                >
+              </h3>
+
+              <p class="box__content">
+                Cultural Representative
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-7">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/manas.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Manas">Manas</span>
+              </h3>
+
+              <p class="box__content">
+                General Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-8">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/manthan.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Manthan"
+                  >Manthan</span
+                >
+              </h3>
+
+              <p class="box__content">
+                Cultural Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-9">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/usham.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Usham ">Usham </span>
+              </h3>
+
+              <p class="box__content">
+                Sports Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-10">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/ansh.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Ansh ">Ansh </span>
+              </h3>
+
+              <p class="box__content">
+                Sports Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-11">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/dishant.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Dishant"
+                  >Dishant</span
+                >
+              </h3>
+
+              <p class="box__content">
+                Athletics Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-12">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/rushabh.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Rushab">Rushab</span>
+              </h3>
+
+              <p class="box__content">
+                Athletics Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-13">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/akash.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Akash ">Akash </span>
+              </h3>
+
+              <p class="box__content">
+                On Stage Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-14">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/mohit.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Mohit">Mohit</span>
+              </h3>
+
+              <p class="box__content">
+                On Stage Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-15">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/harshit.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Harshit"
+                  >Harshit</span
+                >
+              </h3>
+
+              <p class="box__content">
+                On Stage Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-16">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/pranita.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Pranita "
+                  >Pranita
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Off Stage Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-17">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Shaili">Shaili</span>
+              </h3>
+
+              <p class="box__content">Off Stage Coordinator</p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-18">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/chaube.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Shivam "
+                  >Shivam
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Technical Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-19">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/iyer.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Aditya">Aditya</span>
+              </h3>
+
+              <p class="box__content">
+                Technical Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-20">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/amit.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Amit">Amit</span>
+              </h3>
+
+              <p class="box__content">
+                Technical Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-21">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/shekhar.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Shekhar"
+                  >Shekhar</span
+                >
+              </h3>
+
+              <p class="box__content">
+                Technical Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-22">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/trivedi.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Ayush ">Ayush </span>
+              </h3>
+
+              <p class="box__content">
+                Publicity Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-23">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/bhavik.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Bhavik">Bhavik</span>
+              </h3>
+
+              <p class="box__content">
+                Publicity Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-24">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/manan.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Manan ">Manan </span>
+              </h3>
+
+              <p class="box__content">
+                Social Media Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-25">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/bhavya.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Bhavya "
+                  >Bhavya
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Web Master
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-26">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/nishi.jpeg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Nishi">Nishi</span>
+              </h3>
+
+              <p class="box__content">
+                Treasurer
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-27">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/shivani.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Shivani "
+                  >Shivani
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Co-Treasurer
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-28">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/krish.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Krish">Krish</span>
+              </h3>
+
+              <p class="box__content">
+                Creativity head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-29">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/hetvi.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Hetvi ">Hetvi </span>
+              </h3>
+
+              <p class="box__content">
+                Creativity Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-30">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/palande.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Rushikesh "
+                  >Rushikesh
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Paparazzi Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-31">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/ruudra.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Ruudra "
+                  >Ruudra
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Paparazzi Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-32">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/jaimin.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Jaimin "
+                  >Jaimin
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Paparazzi Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-33">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/rahul.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Rahul ">Rahul </span>
+              </h3>
+
+              <p class="box__content">
+                Logistics Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-34">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/rajvi.jpeg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Rajvi ">Rajvi </span>
+              </h3>
+
+              <p class="box__content">
+                Logistics Coordinator
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-35">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/subra.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Abhishek "
+                  >Abhishek
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Graphics Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-36">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/gada.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Rushabh "
+                  >Rushabh
+                </span>
+              </h3>
+
+              <p class="box__content">
+                Infra Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-37">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/meet.jpg"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Meet ">Meet </span>
+              </h3>
+
+              <p class="box__content">
+                Security Head
+              </p>
+            </div>
+          </a>
+          <a class="grid__item" href="#preview-38">
+            <div class="box">
+              <div class="box__shadow"></div>
+              <img
+                class="box__img"
+                src=" council pics/ishan.jfif"
+                alt="Some image"
+              />
+              <h3 class="box__title">
+                <span class="box__title-inner" data-hover="Ishan ">Ishan </span>
+              </h3>
+
+              <p class="box__content">
+                P.R.H
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="overlay__reveal"></div>
+        <div class="overlay__item" id="preview-1">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/nandu.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Meet</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner">President</span>
+            </h4>
+            <div class="box__deco">&#10014;</div>
+          </div>
+          <p class="overlay__content">
+            His work ethic is charismatic. When times are hard, he is your
+            wall,won't let you fall. By dodging all the difficulties he
+            eliminates all his haters and gains your trust. Let us warn you,
+            he's like pizza,loved by all.
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-2">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/nishad.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title ">
+              <span class="box__title-inner">Nishad</span>
+            </h3>
+            <h4 class="box__text ">
+              <span class="box__text-inner ">Secretary</span>
+            </h4>
+            <div class="box__deco box__deco--bottom">&#10115;</div>
+          </div>
+          <p class="overlay__content">
+            He can make getting out of the toughest and hardest situation a cake
+            walk. How can someone not fall for him when he talk? With the
+            temperament of Dhoni and consistency of Kohli he always finishes off
+            in style! With his confidence he has to travel another mile Meet our
+            Secretary Nishad Rane
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-3">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/purva.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Purva</span>
+            </h3>
+            <h4 class="box__text box__text--topcloser">
+              <span class="box__text-inner">Ladies Representative</span>
+            </h4>
+            <div class="box__deco">&#10032;</div>
+          </div>
+          <p class="overlay__content">
+            Leadership is not a position or a title, it is action and example."
+            Receptive, humble and wise, pushes everyone to work beyond their
+            potential. she works efficiently and tirelessly to make the fest
+            bigger than ever. The diligent backbone of Pratishtha Presenting the
+            one and only, our Ladies Representative Purva Desai
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-4">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/forum.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Forum</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Ladies Representative</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            The aura around her makes you wanna go down on your knees, The way
+            her charm works is just awesome yet unique, Naa samajhti apne aap ko
+            kisi se kam, Yeh hai humari LR Forum!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-5">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/shikhar.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Shikhar</span>
+            </h3>
+            <h4 class="box__text box__text--bottomcloser">
+              <span class="box__text-inner">Sports Representative</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            From the highest of highs , To the lowest lows, Emotional
+            rollercoaster that are sports, Fair and just,Full of Integrity, Hard
+            working, Jolly Personality,
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-6">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/sharma.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Abhishek</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner">Cultural Representative</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Do it with passion or not at all, This is the mantra he stands by,
+            With his incredible skills he does it all, The die hard SRK fan,
+            knows it all
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-7">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/manas.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Manas</span>
+            </h3>
+            <h4 class="box__text ">
+              <span class="box__text-inner ">General Coordinator</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            A team player, torch bearer and an outspoken person who is not
+            afraid to take a stand. Coordination is no child’s play Here To
+            Slay, Come what May We present you the ultimate hustler Manas
+            Gokhale!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-8">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/manthan.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Manthan</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Cultural Coordinator</span>
+            </h4>
+            <div class="box__deco">&#10108;</div>
+          </div>
+          <p class="overlay__content">
+            A sweet talker With a charismatic smile He’ll go the extra mile in
+            style He acts and raps While the audience claps
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-9">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/usham.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Usham</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Sports Coordinator</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            his self believe always earns him success when you hear him playing
+            guitar you will forget all your stress with him your sorrow will
+            divide and happiness will double our sports coordinator is always
+            ready to get you out of trouble
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-10">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/ansh.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--bottom">
+              <span class="box__title-inner">Ansh</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner box__text-inner--rotated2"
+                >Sports Coordinator</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            We won't be running short because he holds the fort All the lost
+            ships will return to the port when Ansh Ved is on the court
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-11">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/dishant.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--left">
+              <span class="box__title-inner">Dishant</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Athletics Coordinator</span
+              >
+            </h4>
+            <div class="box__deco box__deco--top">&#10153;</div>
+          </div>
+          <p class="overlay__content">
+            He helps everyone with a smile on face, And rarely complains about
+            anything! He is responsible for all the organised chaos you come
+            across that turns into a fan experience. FIT,FAST & FUN,he does
+            complete justice to these words
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-12">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/rushabh.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--bottom">
+              <span class="box__title-inner">Rushab</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner box__text-inner--rotated1"
+                >Athletics Coordinator</span
+              >
+            </h4>
+            <div class="box__deco box__deco--top">&#10115;</div>
+          </div>
+          <p class="overlay__content">
+            Athletics coordinate karne ki responsibility hai jiske sir par.....
+            Athletics ka chakra chale jiske dum par Kaam se legend or dil ka jo
+            hai sweet chhora... Our most dearest Rushab Vora
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-13">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/akash.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Akash</span>
+            </h3>
+            <h4 class="box__text box__text--topcloser">
+              <span class="box__text-inner">On Stage Head</span>
+            </h4>
+            <div class="box__deco">&#10032;</div>
+          </div>
+          <p class="overlay__content">
+            The serious face is just a facade Sometimes a little forgetful But
+            mostly he is playful The lame jokes still has everyone cracking up
+            with his leadership qualities you will be blownup
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-14">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/mohit.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Mohit</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >On Stage Coordinator</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            With an innocent face and mischievous charm... If he is on stage he
+            will make the stage hot and warm.... The sweet and sour part of the
+            council... Badhaye On stage ki hariyali... The solid tough charming
+            MOHIT BHANUSHALI
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-15">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/harshit.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Harshit</span>
+            </h3>
+            <h4 class="box__text box__text--bottomcloser">
+              <span class="box__text-inner">On Stage Coordinator</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Completes his work on time He is seen on stage with a cheerful smile
+            Efforts is his middle name his future is success and fame Providing
+            the platform to showcase our talents By accepting all the challenges
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-16">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/pranita.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Pranita</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner">Off Stage Head</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Her team looks up to her because of her passion towards her work The
+            person who doesn't know the meaning of awkward The moment she passes
+            what escapes your mouth is wow Meet our Off stage head, Pranita
+            Yashwantrao
+          </p>
+        </div>
+        <div class="overlay__item" id="preview">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--bottom">
+              <span class="box__title-inner">Red</span>
+            </h3>
+            <h4 class="box__text box__title--bottom">
+              <span class="box__text-inner box__text-inner--rotated1"
+                >Life</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            It's time the tale were told of how you took a child and you made
+            him old.
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-17">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Shaili</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Off Stage Coordinator</span>
+            </h4>
+            <div class="box__deco">&#10108;</div>
+          </div>
+          <p class="overlay__content">
+            The back bone of everything off the stage... She is the tigress of
+            jungle n not of cage... This boss lady's personality is soo wow and
+            wahh... She is non other then our Off stage coordinator SHAILI SHAH
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-18">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/chaube.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Shivam</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Technical Head</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            solder guns and screwdrivers are his weapons His hardworking ability
+            is an exception Dedicated to his work Having shivam chaube as
+            technical head is a delightful perk
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-19">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/iyer.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--bottom">
+              <span class="box__title-inner">Aditya</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner box__text-inner--rotated2"
+                >Technical Coordinator</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Pubg ka god ; sakec ka bod , Lifts the tech team up a shot, Not the
+            one to back off, Our beloved technical coordinator is a total pop!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-20">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/amit.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--left">
+              <span class="box__title-inner">Amit</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Technical Coordinator</span
+              >
+            </h4>
+            <div class="box__deco box__deco--top">&#10153;</div>
+          </div>
+          <p class="overlay__content">
+            Firm with a temperate will, Endurance, foresight, strength and
+            skill, Helping everyone is a part of his daily drill, Our technical
+            coordinator works his way through the mill.
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-21">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/shekhar.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--bottom">
+              <span class="box__title-inner">Shekhar</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner box__text-inner--rotated1"
+                >Technical Coordinator</span
+              >
+            </h4>
+            <div class="box__deco box__deco--top">&#10115;</div>
+          </div>
+          <p class="overlay__content">
+            Chhota packet bada dhamaka Takniki kaamo mein milta hai isko chaska
+            While working you will never see him rest Isn't our technical
+            co-head bestest of the best!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-22">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics//trivedi.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Ayush</span>
+            </h3>
+            <h4 class="box__text box__text--topcloser">
+              <span class="box__text-inner">Publicity Head</span>
+            </h4>
+            <div class="box__deco">&#10032;</div>
+          </div>
+          <p class="overlay__content">
+            To publicise our events he goes an extra mile Loaded with a cute
+            smile You will receive all the information immediately Just because
+            of our publicity head Ayush Trivedi
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-23">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/bhavik.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Bhavik</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Publicity Coordinator</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            For your event you will get his full support The crazy potterhead
+            always talks about Hogwarts Publicity coordinatior Bhavik jain is
+            full of life Which Cuts through the awkwardness like a knife
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-24">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/manan.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Manan</span>
+            </h3>
+            <h4 class="box__text box__text--bottomcloser">
+              <span class="box__text-inner">Social Media Head</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            The one who loves to work off a screen Nuclues invests it's faith in
+            this adorable chubby guy He has great strategic planning for it's
+            social media handles A simple fellow with a simple life Just wants
+            to make sure that the event reaches the lime light
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-25">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/bhavya.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Bhavya</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner">Web Master</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Code karne me blaster.... Yeh na ho toh website lage jaise
+            disaster... Apna ek hi webmaster.... Dil jaise ho samandar -e- daria
+            Naam uska BHAVYA HARIA
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-26">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/nishi.jpeg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--bottom">
+              <span class="box__title-inner">Nishi</span>
+            </h3>
+            <h4 class="box__text box__title--bottom">
+              <span class="box__text-inner box__text-inner--rotated1"
+                >Treasurer</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Sweet personality and excellent speaker, Bet you haven't met such a
+            dope executor Meet humare college ki Munshi, sabki pyaari Nishii!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-27">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/shivani.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Shivani</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Co-Treasurer</span>
+            </h4>
+            <div class="box__deco">&#10108;</div>
+          </div>
+          <p class="overlay__content">
+            Try try till you die, You cannot negotiate with this Deal breaker
+            even if you cry, Jiski itni madhur hai Vani, woh hai humari Shivani!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-28">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/krish.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Krish</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Creativity head</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            His art attracts people passing by, Hardwork,Productive, are the
+            words he lives by Brings crazy idea to life with his vision, Jiska
+            aandaz hai thora hatke, Kalakar jo Pratistha ko aakar de,krish doshi
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-29">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/hetvi.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--bottom">
+              <span class="box__title-inner">Hetvi</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner box__text-inner--rotated2"
+                >Creativity Coordinator</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Hardworking and bright , With a captivating smile, Melting your
+            problems with a upward flight , Our creativity coordinator
+            transforms everything with style.
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-30">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/palande.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title box__title--straight box__title--left">
+              <span class="box__title-inner">Rushikesh</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Paparazzi Head</span
+              >
+            </h4>
+            <div class="box__deco box__deco--top">&#10153;</div>
+          </div>
+          <p class="overlay__content">
+            Bhaiye ek photu please “ Focus me uske har ek frame Har event ki
+            ronak badhaye The one with magical powers, With a click he freezes
+            the moment, The reason for that cheesy smile, Rushikesh Palande
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-31">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/ruudra.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title ">
+              <span class="box__title-inner">Ruudra</span>
+            </h3>
+            <h4 class="box__text ">
+              <span class="box__text-inner ">Paparazzi Coordinator</span>
+            </h4>
+            <div class="box__deco box__deco--bottom">&#10115;</div>
+          </div>
+          <p class="overlay__content">
+            From shutterbug to paparazzi His journey was a piece of cake for
+            him, With his quick wit and sharp focus, He'll capture some of your
+            best moment's making them feel like a film! Presenting our paparazzi
+            head Rudra Patel!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-32">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/jaimin.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Jaimin</span>
+            </h3>
+            <h4 class="box__text box__text--topcloser">
+              <span class="box__text-inner">Paparazzi Coordinator</span>
+            </h4>
+            <div class="box__deco">&#10032;</div>
+          </div>
+          <p class="overlay__content">
+            Photography is something that he lives for, That perfect click is
+            what he strives for. An artist who paints the camera film with his
+            vision Presenting you Jaimin Desai Pap Co-head, with a vision
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-33">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/rahul.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Rahul</span>
+            </h3>
+            <h4 class="box__text box__text--bottom box__text--right">
+              <span class="box__text-inner box__text-inner--rotated3"
+                >Logistics Head</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Enthusiastic and zealous logistician. Helping the team with each and
+            every requirement His perfection level is 100 percent Our logistic
+            Head who knows the way, goes the way and shows the way. He is Rahul
+            Gupte
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-34">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/rajvi.jpeg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Rajvi</span>
+            </h3>
+            <h4 class="box__text box__text--bottomcloser">
+              <span class="box__text-inner">Logistics Coordinator</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            This introvert turned extrovert ,urges every introvert to explore
+            the darker side Our logistic head has worked in almost all the teams
+            works hard to live her dream A charismatic person who is always
+            there when you need Makes things simple and towards the right path
+            she leads
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-35">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/subra.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Abhishek</span>
+            </h3>
+            <h4 class="box__text">
+              <span class="box__text-inner">Graphics Head</span>
+            </h4>
+          </div>
+          <p class="overlay__content">
+            Tall, Dark and Strong just as his taste in coffee and humour. Our
+            Graphics Head’s Designs will give you space’s tour on his computer.
+            This Tarantino Fan’s dedication is such that he can avoid looking
+            Pulp Fiction Poster and choose designing for Pratishtha instead!
+            Introducing the One man army Abhishek Subramaniam
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-36">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/gada.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title ">
+              <span class="box__title-inner">Rushabh</span>
+            </h3>
+            <h4 class="box__text ">
+              <span class="box__text-inner box__text-inner--rotated1"
+                >Infra Head</span
+              >
+            </h4>
+          </div>
+          <p class="overlay__content">
+            from managing the croud to arranging tables you will always find him
+            sticking to his timetable He will do all your tasks with smile on
+            his face Before and after fest , you will find all things in place
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-37">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/meet.jpg"
+              alt="Some image"
+            />
+            <h3 class="box__title">
+              <span class="box__title-inner">Meet</span>
+            </h3>
+            <h4 class="box__text box__text--bottom">
+              <span class="box__text-inner">Security Head</span>
+            </h4>
+            <div class="box__deco">&#10108;</div>
+          </div>
+          <p class="overlay__content">
+            Pre and Post the fest he stays awake at nights, Completing his work
+            till midnight, so no one faces blight, Always there for anyone so
+            everyone can have a fest safe and bright! Security sounds an easy
+            job but it isn't, all thanks to meet!
+          </p>
+        </div>
+        <div class="overlay__item" id="preview-38">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img
+              class="box__img box__img--original"
+              src=" council pics/ishan.jfif"
+              alt="Some image"
+            />
+            <h3 class="box__title ">
+              <span class="box__title-inner">Ishan</span>
+            </h3>
+            <h4 class="box__text ">
+              <span class="box__text-inner">P.R.H</span>
+            </h4>
+            <div class="box__deco">&#10108;</div>
+          </div>
+          <p class="overlay__content">
+            Hota sabke pass hai... Par deta koi nahi.." But that's not what
+            happens with when our PRO is pitching .. With his dashing style,
+            witty sense of humor and cute smile He can get sponsors by our side.
+          </p>
+        </div>
+        <button class="overlay__close">
+          <svg class="icon icon--cross">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/demo.js"></script>
+  </body>
+</html>
