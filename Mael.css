@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Mael';
+    src: url('fonts/MAEL.eot');
+    src: url('fonts/MAEL.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MAEL.woff2') format('woff2'),
+         url('fonts/MAEL.woff') format('woff'),
+         url('fonts/MAEL.ttf')  format('truetype'),
+         url('fonts/MAEL.svg#Mael') format('svg');
+}
